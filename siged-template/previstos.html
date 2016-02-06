@@ -69,237 +69,217 @@
 
         <div id="centro">
 
-            <div id="header">
-	
-                <div id="marca_icp" style="text-align:left;">
-                    <a href="http://www.ipc.tce.ce.gov.br/" target="_blank">
-                        <span style="display:inline-block; height:92px; width:155px;"></span>
-                    </a>
-                </div>	
+			<section class="header">
 				
-                <div id="login">
-                    <div id="login_left">					
-                        <div id="login_right">
-
-                            <form action="/j_spring_security_check" method="post">
-                                <span class="loginLabel">Login</span>
-                                <input class="login" type='text' name='j_username' id='j_username' placeholder="Usuário" />
-                                <input class="login" type='password' name='j_password' id='j_password' placeholder="Senha" />
-                                <input class="submit" type='submit' value='Entrar'/>
-                            </form>
-
-                        </div>
+				<div id="header">
+				
+				    <div id="logo-siged" style="text-align:left;">
+				        <a href="http://www.ipc.tce.ce.gov.br/" target="_blank">
+				            <img style="height: 125px;" alt="LOGO TCE-CE" src="static/images/logo-siged.png" />
+				        </a>
+				    </div>
+				
+				    <div id="login">
+                        <form action="/j_spring_security_check" method="post">
+                            <span class="loginLabel">Login</span>
+                            <input class="login" type='text' name='j_username' id='j_username' placeholder="Usuário" />
+                            <input class="login" type='password' name='j_password' id='j_password' placeholder="Senha" />
+                            <input class="submit" type='submit' value='Entrar'/>
+                        </form>
+				    </div>			
+				
+				    <div id="logo-tce">
+                        <a href="http://www.tce.ce.gov.br/" target="_blank">
+                            <img style="width: 180px;" alt="LOGO TCE-CE" src="static/images/logo-tce.png" />
+                        </a>
                     </div>
-                </div>			
-			
-                <div id="marca">
-                    <a href="http://www.tce.ce.gov.br/" target="_blank">
-                        <img style="width: 180px;" alt="LOGO TCE-CE" src="static/images/logo-tce.png" />
-                    </a>
-                </div>
-	
-	       </div>
+				
+				</div>
+                
+                <nav class="menu">
+                    
+                    <ul id="menu">                       
 
-            <div id="titulosiged">
-                <h2>Sistema de Gestão Educacional</h2>
-            </div>
+                        <li><a href="#">Eventos</a>
 
-            <div id="omenu">
+                            <ul id="eventos">
 
-                <ul id="menu">
+                                <li>
+                                    <a id="previstos" href="/evento/previstos">Previstos</a>
 
-                    <li style="padding: 0;"><img class="" alt="" src="static/images/omenu_left.png" /></li>
+                                    <ul>
+                                        <li><a href="/evento/eventos/previstos/1">Presencial</a></li>
+                                        <li><a href="/evento/eventos/previstos/2">A Distância (EAD)</a></li>
+                                    </ul>                                    
+                                </li>
 
-                    <li class="evento"><a href="#">Eventos</a>
-                        
-                        <ul id="eventos">
+                                <li><a id="emandamento" href="/evento/emandamento">Em Andamento</a>
+                                    <ul>
+                                        <li><a href="/evento/eventos/emandamento/1">Presencial</a></li>
+                                        <li><a href="/evento/eventos/emandamento/2">A Distância (EAD)</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a id="realizados" href="/evento/realizados">Realizados</a>
+                                    <ul>
+                                        <li><a href="/evento/eventos/realizados/1">Presencial</a></li>
+                                        <li><a href="/evento/eventos/realizados/2">A Distância (EAD)</a></li>
+                                    </ul>
+                                </li>
+                                
+                            </ul>
+
+                        </li>
+
+                        <li>
                             
-                            <li><img class="corner_inset_left" alt="" src="static/images/corner_inset_left.png" />
-                                <a id="previstos" href="/evento/previstos">Previstos</a>
+                            <a href="#"> Instrutores</a>			
 
-                                <ul>
-                                    <li><a href="/evento/eventos/previstos/1">Presencial</a></li>
-                                    <li><a href="/evento/eventos/previstos/2">A Distância (EAD)</a></li>
-                                </ul>
+                            <ul id="instrutores">
+                                
+                                <li><a href="/instrutor/form">Pré-Cadastro</a></li>
 
-                                <img class="corner_inset_right" alt="" src="static/images/corner_inset_right.png" />
-                            </li>
+                                <li><a href="static/docs/Modelo_Projeto_Evento-Curso_IPC.doc">Modelo de Projeto de Curso/Evento</a></li> 
+                                
+                            </ul>
+                            
+                        </li>
 
-                            <li><a id="emandamento" href="/evento/emandamento">Em Andamento</a>
-                                <ul>
-                                    <li><a href="/evento/eventos/emandamento/1">Presencial</a></li>
-                                    <li><a href="/evento/eventos/emandamento/2">A Distância (EAD)</a></li>
-                                </ul>
-                            </li>
+                        <li><a href="/usuario/esquecisenha">Esqueci minha senha</a></li>
 
-                            <li><a id="realizados" href="/evento/realizados">Realizados</a>
-                                <ul>
-                                    <li><a href="/evento/eventos/realizados/1">Presencial</a></li>
-                                    <li><a href="/evento/eventos/realizados/2">A Distância (EAD)</a></li>
-                                </ul>
-                            </li>
+                        <li><a href="/certificadoEmitido/verificar/form">Validar certificado</a></li>
 
-                            <li class="last">
-                                <img class="corner_left" alt="" src="static/images/corner_left.png" /> 
-                                <img class="middle" alt="" src="static/images/dot.gif" />
-                                <img class="corner_right" alt="" src="static/images/corner_right.png" />
-                            </li>
-                        </ul>
-                        
-                    </li>
+                    </ul>
+                    
+                </nav>
 
-
-                    <li class="evento">
-                        <a href="#"> Instrutores</a>			
-
-                        <ul id="instrutores">
-                            <li><img class="corner_inset_left" alt="" src="static/images/corner_inset_left.png" />
-                                    <a href="/instrutor/form">Pré-Cadastro</a> 
-                                <img class="corner_inset_right" alt="" src="static/images/corner_inset_right.png" />
-                            </li>
-
-                            <li><a href="static/docs/Modelo_Projeto_Evento-Curso_IPC.doc">Modelo de Projeto de Curso/Evento</a></li>
-
-                            <li class="last">
-                                <img class="corner_left" alt="" src="static/images/corner_left.png" /> 
-                                <img class="middle" alt="" src="static/images/dot.gif" />
-                                <img class="corner_right" alt="" src="static/images/corner_right.png" />
-                            </li>
-                        </ul>				
-                    </li>
-
-                    <li><a href="/usuario/esquecisenha">Esqueci minha senha</a></li>
-                    <li><a href="/certificadoEmitido/verificar/form">Validar certificado</a></li>
-
-                    <li style="padding: 0;"><img class="" alt="" src="static/images/omenu_right.png" /></li>
-
-                </ul>
-
-            </div>
-
-            <div id="geral">
+			</section>
             
-                <div class="bordaBox">
+            <section>
+                
+                <div id="geral">
             
-                    <div class="conteudo">
-            
-                        <div class="bordaBox2">				
-            
-                            <div class="conteudo">
-            
-                                <script type="text/javascript">
-            
-                                    jQuery(document).ready(function($) {
-            
-                                        var acoesDivs = $(".acoes");
+                    <div class="bordaBox">
 
-                                        acoesDivs.each(function(pos, div) {
-                                        
-                                            var $div = $(div);
-                                        
-                                            if ($.trim($div.children('#avalia').html()).length == 0)
-                                        
-                                                $div.remove();
+                        <div class="conteudo">
+
+                            <div class="bordaBox2">				
+
+                                <div class="conteudo">
+
+                                    <script type="text/javascript">
+
+                                        jQuery(document).ready(function($) {
+
+                                            var acoesDivs = $(".acoes");
+
+                                            acoesDivs.each(function(pos, div) {
+
+                                                var $div = $(div);
+
+                                                if ($.trim($div.children('#avalia').html()).length == 0)
+
+                                                    $div.remove();
+                                            });
                                         });
-                                    });
-                                    
-                                </script>
-            
-                                                                
-                                <div class="body">
-                                    
-                                    <h1>Eventos Previstos</h1>
 
-                                    <div class="message">Clique no "+" para detalhes do evento.</div>
+                                    </script>
 
-                                    <div id="titulo" class="trigger">
-                                        <h2>
-                                            TREINAMENTO A CONSCIENTIZAÇÃO DO PÚBLICO INTERNO SOBRE A RELEVÂNCIA DAS OUVIDORIAS -
-                                            10/03/2016
-                                            a
-                                            10/03/2016
-                                        </h2>
-                                    </div>
-                                    
-                                    <div class="toggle_container">
-                                    
-                                        <div class="block">
-                                            
-                                            <ul class="esq">
 
-                                                <h3>Objetivo Geral</h3>
-                                                
-                                                <li>
-                                                    <p>
-                                                        ESTABELECER DIRETRIZES E PRÁTICAS SOBRE A INSTALAÇÃO DE UMA OUVIDORIA NA MELHORIA DA ADMINISTRAÇÃO PÚBLICA
-                                                    </p>
-                                                </li>
+                                    <div class="body">
 
-                                                <h3>Detalhes</h3>
-                                                
-                                                <li>
-                                                    <p>
-                                                        <b>Tipo do Evento: </b>TREINAMENTO 
-                                                        <br />
-                                                        <b>Eixo Temático: </b>TEMAS DIVERSOS
-                                                        <br />
-                                                        <b>Público Alvo: </b>SERVIDOR TCE-CE
-                                                        <br />
-                                                        <b>Modalidade: </b>Presencial 
-                                                        <br />
-                                                        <b>Carga Horária: </b>2 h/a								
-                                                        <br />
-                                                        <b>Localização: </b>AUDITÓRIO IPC, FORTALEZA-CE, BRASIL
-                                                        <br />
-                                                        <b>Provedor: </b> OUVIDORIA DO TRIBUNAL DE CONTAS DO ESTADO DO CEARÁ 
-                                                        <br />
-                                                        <b>Responsável pelo Evento: </b>TALITA LOPES LEITE
-                                                        <br />
-                                                        <b>Período Previsto: </b>10/03/2016 a 10/03/2016
-                                                        <br />
-                                                        <b>Período Pré-Inscrição: </b>10/02/2016 a 10/03/2016
-                                                        <br /> 
-                                                        <b>Período Realização: </b>10/03/2016 a 10/03/2016
-                                                    </p>
-                                                </li>
+                                        <h1>Eventos Previstos</h1>
 
-                                                <h3>
-                                                    Conteúdo Programático
-                                                </h3>
-                                                
-                                                <li>
-                                                    <p>
-                                                        TREINAMENTO DOS REPRESENTANTES DAS UNIDADES TÉCNICAS DESTE TRIBUNAL DE CONTAS PARA ESTABELECER DIRETRIZES E PRÁTICAS SOBRE A INSTALAÇÃO DE UMA OUVIDORIA NA MELHORIA DA ADMINISTRAÇÃO PÚBLICA
-                                                    </p>
-                                                </li>
+                                        <div class="message">Clique no "+" para detalhes do evento.</div>
 
-                                                </ul>
+                                        <div id="titulo" class="trigger">
+                                            <h2>
+                                                TREINAMENTO A CONSCIENTIZAÇÃO DO PÚBLICO INTERNO SOBRE A RELEVÂNCIA DAS OUVIDORIAS -
+                                                10/03/2016
+                                                a
+                                                10/03/2016
+                                            </h2>
+                                        </div>
 
-                                                <ul>
-                                                    <h3>Módulos</h3>
+                                        <div class="toggle_container">
+
+                                            <div class="block">
+
+                                                <ul class="esq">
+
+                                                    <h3>Objetivo Geral</h3>
 
                                                     <li>
                                                         <p>
-                                                            <b>MÓDULO ÚNICO</b>
-                                                            <br /> 
+                                                            ESTABELECER DIRETRIZES E PRÁTICAS SOBRE A INSTALAÇÃO DE UMA OUVIDORIA NA MELHORIA DA ADMINISTRAÇÃO PÚBLICA
+                                                        </p>
+                                                    </li>
+
+                                                    <h3>Detalhes</h3>
+
+                                                    <li>
+                                                        <p>
+                                                            <b>Tipo do Evento: </b>TREINAMENTO 
                                                             <br />
-                                                            <b>Período: </b> 10/03/2016 a 10/03/2016
+                                                            <b>Eixo Temático: </b>TEMAS DIVERSOS
                                                             <br />
-                                                            <b>Carga horária: </b>2 h/a
+                                                            <b>Público Alvo: </b>SERVIDOR TCE-CE
                                                             <br />
-                                                            <b>Horário 1° Turno: </b>09:00 - 11:00
+                                                            <b>Modalidade: </b>Presencial 
                                                             <br />
-                                                            <b>Frequência Mínima: </b>75%
+                                                            <b>Carga Horária: </b>2 h/a								
                                                             <br />
                                                             <b>Localização: </b>AUDITÓRIO IPC, FORTALEZA-CE, BRASIL
                                                             <br />
-                                                            <b>Instrutor(es): </b>WANHA ROCHA
+                                                            <b>Provedor: </b> OUVIDORIA DO TRIBUNAL DE CONTAS DO ESTADO DO CEARÁ 
+                                                            <br />
+                                                            <b>Responsável pelo Evento: </b>TALITA LOPES LEITE
+                                                            <br />
+                                                            <b>Período Previsto: </b>10/03/2016 a 10/03/2016
+                                                            <br />
+                                                            <b>Período Pré-Inscrição: </b>10/02/2016 a 10/03/2016
+                                                            <br /> 
+                                                            <b>Período Realização: </b>10/03/2016 a 10/03/2016
                                                         </p>
                                                     </li>
-                                                </ul>
-                                            
-                                            </div>
-                                        
+
+                                                    <h3>
+                                                        Conteúdo Programático
+                                                    </h3>
+
+                                                    <li>
+                                                        <p>
+                                                            TREINAMENTO DOS REPRESENTANTES DAS UNIDADES TÉCNICAS DESTE TRIBUNAL DE CONTAS PARA ESTABELECER DIRETRIZES E PRÁTICAS SOBRE A INSTALAÇÃO DE UMA OUVIDORIA NA MELHORIA DA ADMINISTRAÇÃO PÚBLICA
+                                                        </p>
+                                                    </li>
+
+                                                    </ul>
+
+                                                    <ul>
+                                                        <h3>Módulos</h3>
+
+                                                        <li>
+                                                            <p>
+                                                                <b>MÓDULO ÚNICO</b>
+                                                                <br /> 
+                                                                <br />
+                                                                <b>Período: </b> 10/03/2016 a 10/03/2016
+                                                                <br />
+                                                                <b>Carga horária: </b>2 h/a
+                                                                <br />
+                                                                <b>Horário 1° Turno: </b>09:00 - 11:00
+                                                                <br />
+                                                                <b>Frequência Mínima: </b>75%
+                                                                <br />
+                                                                <b>Localização: </b>AUDITÓRIO IPC, FORTALEZA-CE, BRASIL
+                                                                <br />
+                                                                <b>Instrutor(es): </b>WANHA ROCHA
+                                                            </p>
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+
                                         </div>
 
                                         <div id="titulo" class="trigger">
@@ -313,7 +293,7 @@
                                                 </div>
                                             </h2>
                                         </div>
-                                    
+
                                         <div class="toggle_container">
                                             <div class="block">
                                                 <ul class="esq">
@@ -396,7 +376,7 @@
                                                             <b>Instrutor(es): </b>HENRIQUE BEZERRA CARDOSO
                                                         </p>
                                                     </li>
-                                                    
+
                                                     <div style="margin: 33px 2px">
                                                         <!-- BOTÃO DE PRÉ-INSCRIÇÃO -->
                                                         <a id="linkPreInscricao" href="/evento/inscricao/5581" title="Pré-Inscrição">										
@@ -404,23 +384,24 @@
                                                         </a>
                                                     </div>
                                                 </ul>                                                
-                                                    
-                                            </div>                                        
-                                        </div>
-                                    
-                                    </div>
-                                
-                                </div>
-                            
-                            </div>
-                        
-                        </div>
-                    
-                    </div>
-                
-                </div>
 
-	       <div id="footer"></div>	
+                                            </div>                                        
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    
+                </div>
+                
+            </section>       	
 	
         </div>
     

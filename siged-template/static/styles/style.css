@@ -1,3 +1,9 @@
+/* novos estilos */
+.header {
+    background-color: #EEE;
+}
+
+/* estilos antigos*/
 html {
     height: 100%;
     margin-bottom: 1px;
@@ -50,27 +56,21 @@ img {
 }
 
 #centro{
-    margin:0 auto;
     text-align:center;
-    background:url(../images/bkg.jpg) repeat-x 0 0;
-    width:100%;
-    height:100%;
-
 }
 
 div#header{
     height:102px;
     position: relative;
+    margin: 0px 10%
 }
 
-div#marca_icp{
-    background:url(../images/marca_ipc.png) no-repeat left top;
+div#logo-siged{
     height:92px;
-    width:430px;
     float:left;
 }
 
-div#marca{
+div#logo-tce{
     width: 200px;
     position: absolute;
     top: 2.1em;
@@ -78,11 +78,9 @@ div#marca{
 }
 
 div#login{
-    background:url(../images/login_bkg.png) repeat-x left top;
-    height:50px;
-    width:auto;
     width:450px;
     float:left;
+    margin-left: 234px;
 }
 
 .loginLabel{
@@ -221,21 +219,13 @@ h1 small{
     color: #666;
 }
 .conteudo #titulo.trigger {
-	display: table;
 	margin-top: 5px;
-	width: 100%;
 }
 .conteudo #titulo.trigger h2 {
-    padding-left:50px;
-    margin: 0px;
-    background: url(../images/h2_trigger_a.png) no-repeat;
     height: 46px;
     line-height: 20px;
-    width: 100%;
     font-size: 16px;
     text-align: left;
-    color:#006699;
-    font-weight: bold;
     display: table-cell;
     vertical-align: middle;    
 }
@@ -255,20 +245,12 @@ h1 small{
 }
 
 .toggle_container {
-    margin: 0 0 5px;
-    padding: 0;
-    border-top: 1px dashed #d6d6d6;
-    background: #f0f0f0 url(../images/toggle_block_stretch.gif) repeat-y left top;
-    overflow: hidden;
-    font-size: 12px;
-    clear: both;
-    background-size: 988px 1px; 
+    border-top: 1px dashed #d6d6d6;     
 }
 
 .toggle_container .block {
     padding-left: 32px;
     padding-top: 15px;
-    background: url(../images/toggle_block_btm.gif) no-repeat left bottom;
     overflow:hidden;
 }
 
@@ -373,7 +355,7 @@ h1 small{
 .submit {
     cursor: pointer;
     color: #FFF !important;
-    background-color: rgba(46, 105, 163, 0);   
+    background-color: #184382;   
     margin-right: 2px;
     margin-left: 5px;
     border: 1px solid #9DB2C7;
