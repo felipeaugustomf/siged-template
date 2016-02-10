@@ -1,16 +1,11 @@
-/* novos estilos */ 
 .menu {
     background-color: #122F5E;
 }
-
 #menu{
     display:inline-block;
     list-style:none;
     line-height:33px;    
 }
-
-/* menu */
-
 #menu a { 
     color:#FFFFFF;
     text-decoration:none;
@@ -31,7 +26,6 @@
     padding:0px;
     background-color:Transparent;
 }
-/* sub-menus */
 #menu ul {
     padding:0px;
     margin:0px;
@@ -46,7 +40,6 @@
     line-height:16px;
     background-color:#122F5E;
     color:#0395CC;
-    /* for IE */
     display:none;
 }
 #menu li:hover > ul { display:block;}
@@ -72,20 +65,16 @@
 #menu li ul li:first-child { border-top: none; }
 #menu li ul li a { display:block; color:#FFFFFF; font-size:11px; font-weight:bold; }
 #menu li ul li a:hover { color:#7FCDFE; }
-/* main submenu */
 #menu #main { left:0px; top:-20px; padding-top:20px; background-color:#000061; color:#fff; z-index:999;}
-/* search */
 .searchContainer div { background-color:#fff; display:inline; padding:5px;}
 .searchContainer input[type="text"] {border:none;}
 .searchContainer img { vertical-align:middle;}
-/* corners*/
 #menu .corner_inset_left { position:absolute; top:-2px; left:-36px;}
 #menu .corner_inset_right { position:absolute; top:-2px; left:150px;}
 #menu .last { background:transparent none repeat scroll 0% 0%; margin:0px; padding:0px; border:none; position:relative; border:none; height:0px;}
 #menu .corner_left { position:absolute; left:0px; top:0px;}
 #menu .corner_right { position:absolute; left:152px; top:0px;}
 #menu .middle { position:absolute; left:18px; height: 20px; width: 135px; top:0px;}
-/* tabela css */
 #rounded-corner
 {
     font-size: 12px;

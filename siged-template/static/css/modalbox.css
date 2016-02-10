@@ -1,14 +1,3 @@
-/*
-   modalbox.css
-   
-   Modalbox project
-   
-   Created by Andrew Okonetchnikov.
-   Copyright 2006-2010 okonet.ru. All rights reserved.
-   
-   Licensed under MIT license.
-*/
-
 #MB_overlay {
 	position: absolute;
 	margin: auto;
@@ -19,13 +8,11 @@
 	background-color: #000!important;
 }
 #MB_overlay[id] { position: fixed; }
-
 #MB_windowwrapper {
 	position:absolute;
 	top:0;
 	width:100%;
 }
-
 #MB_window {
 	position:relative;
 	margin-left:auto;
@@ -37,24 +24,20 @@
 	z-index: 10000;
 }
 #MB_window[id] { position: relative; }
-
 #MB_frame {
 	position: relative;
 	background-color: #EFEFEF;
 	height: 100%;
 }
-
 #MB_header {
 	margin: 0;
 	padding: 0;
 }
-
 #MB_content {
 	position: relative;
 	padding: 6px .75em;
 	overflow: auto;
 }
-
 #MB_caption {
 	font: bold 100% "Lucida Grande", Arial, sans-serif;
 	text-shadow: #FFF 0 1px 0;
@@ -62,7 +45,6 @@
 	margin: 0;
 	text-align: left;
 }
-
 #MB_close {
 	display: block;
 	position: absolute;
@@ -75,14 +57,11 @@
 #MB_close:hover {
 	background: transparent;
 }
-
 #MB_loading {
 	padding: 1.5em;
 	text-indent: -10000px;
 	background: transparent url(../images/spinner.gif) 50% 0 no-repeat;
 }
-
-/* Color scheme */
 #MB_window {
 	background-color: #EFEFEF;
 	color: #000;
@@ -91,31 +70,26 @@
 	-moz-box-shadow: #000 0 0 64px; 
 	box-shadow: 0 0 64px #000;
 }
-	#MB_frame {
-		padding-bottom: 4px;
-		
-		-webkit-border-bottom-left-radius: 4px;
-		-webkit-border-bottom-right-radius: 4px;
-
-		-moz-border-radius-bottomleft: 4px;
-		-moz-border-radius-bottomright: 4px;
-
-		border-bottom-left-radius: 4px;
-		border-bottom-right-radius: 4px;
-	}
+#MB_frame {
+	padding-bottom: 4px;
 	
-	#MB_content { border-top: 1px solid #F9F9F9; }
+	-webkit-border-bottom-left-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
 
-	#MB_header {
-	  background-color: #DDD;
-	  border-bottom: 1px solid #CCC;
-	}
-		#MB_caption { color: #000 }
-		#MB_close { color: #777 }
-		#MB_close:hover { color: #000 }
+	-moz-border-radius-bottomleft: 4px;
+	-moz-border-radius-bottomright: 4px;
 
-
-/* Alert message */
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+#MB_content { border-top: 1px solid #F9F9F9; }
+#MB_header {
+  	background-color: #DDD;
+  	border-bottom: 1px solid #CCC;
+}
+#MB_caption { color: #000 }
+#MB_close { color: #777 }
+#MB_close:hover { color: #000 }
 .MB_alert {
 	margin: 10px 0;
 	text-align: center;
