@@ -1,25 +1,43 @@
-.header {
-    background-color: #EEE;
-}
-div#header{
+#header-content{
     height:102px;
     position: relative;
     margin: 0px 10%
 }
-div#logo-siged{
+#logo-siged{
     height:92px;
     float:left;
 }
-div#logo-tce{
+#logo-tce{
     width: 200px;
     position: absolute;
     top: 2.1em;
     right: 2.5em;
 }
-div#login{
+#login{
     width:450px;
     float:left;
     margin-left: 234px;
+}
+#login .login{
+    width:100px;    
+    margin-top:11px;    
+    margin-bottom: 12px;
+    margin-right: 8px;
+    margin-left: 0px;
+    border: 1px solid rgb(185,185,185);
+    border-top-color: rgb(160,160,160);
+    border-radius: 2px;
+    font-size:10px;
+    color:#006699;
+    padding-left:5px;
+    padding-right:5px;
+}
+#login .login:focus{
+    border-color: #4d90fe;
+    outline: none;
+}
+.header-section {
+    background-color: #EEE;
 }
 .loginLabel{
     color: #FFFFFF;
@@ -35,24 +53,6 @@ div#login{
     font-size: 12px;
     font-weight: bolder;
     text-shadow: 1px 1px #003366;
-}
-div#login .login{
-    width:100px;    
-    margin-top:11px;    
-    margin-bottom: 12px;
-    margin-right: 8px;
-    margin-left: 0px;
-    border: 1px solid rgb(185,185,185);
-    border-top-color: rgb(160,160,160);
-    border-radius: 2px;
-    font-size:10px;
-    color:#006699;
-    padding-left:5px;
-    padding-right:5px;
-}
-div#login .login:focus{
-    border-color: #4d90fe;
-    outline: none;
 }
 .botaoSair{
 	background:url(../images/power.png) no-repeat center;
