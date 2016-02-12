@@ -3,14 +3,11 @@
 }
 #menu{
     display:inline-block;
-    list-style:none;
-    line-height:33px;    
+    list-style:none;   
 }
 #menu a { 
     color:#FFFFFF;
     text-decoration:none;
-    font-size:13px;
-    font-weight:bolder;
     text-shadow: 1px 1px #003366;
 }
 #menu > li {
@@ -37,7 +34,6 @@
     top:0px;
     margin-top:33px;
     width:170px;
-    line-height:16px;
     background-color:#122F5E;
     color:#0395CC;
     display:none;
@@ -63,7 +59,7 @@
     border-radius: 5px; 
 }
 #menu li ul li:first-child { border-top: none; }
-#menu li ul li a { display:block; color:#FFFFFF; font-size:11px; font-weight:bold; }
+#menu li ul li a { display:block; color:#FFFFFF;}
 #menu li ul li a:hover { color:#7FCDFE; }
 #menu #main { left:0px; top:-20px; padding-top:20px; background-color:#000061; color:#fff; z-index:999;}
 .searchContainer div { background-color:#fff; display:inline; padding:5px;}
@@ -77,8 +73,7 @@
 #menu .middle { position:absolute; left:18px; height: 20px; width: 135px; top:0px;}
 #rounded-corner
 {
-    font-size: 12px;
-    margin: 45px;
+	margin: 45px;
     width: 700px;
     text-align: left;
     border-collapse: collapse;
@@ -94,8 +89,6 @@
 #rounded-corner th
 {
     padding: 8px;
-    font-weight: bold;
-    font-size: 13px;
     color: #FFFFFF;
     background: #26558C;
 }
@@ -105,7 +98,6 @@
     background: #e8edff;
     border-top: 1px solid #fff;
     color: #669;
-    font-weight:bold;
 }
 #rounded-corner tfoot td.rounded-foot-left
 {
