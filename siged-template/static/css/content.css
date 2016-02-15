@@ -1,132 +1,156 @@
-.content{
-    margin-left:auto;
-    margin-right:auto;
-    height:auto;
-    width:994px;
-    padding-top:3px;
-	text-align: left;	
+.content {
+	margin: 1% 12%;
+	padding: 10px 25px;
+	height: 100%;
+	text-align: left;
+	border: 1px solid #CCC;
+	border-radius: 3px;
 }
+
 .content #titulo.trigger {
 	margin-top: 5px;
 }
+
 .content #titulo.trigger h2 {
-    height: 46px;
-    text-align: left;
-    display: table-cell;
-    vertical-align: middle;    
+	height: 46px;
+	text-align: left;
+	display: table-cell;
+	vertical-align: middle;
 }
+
 .content #titulo.trigger h2 a {
-    color: #fff;
-    text-decoration: none;
-    display: block;
+	color: #fff;
+	text-decoration: none;
+	display: block;
 }
+
 .content #titulo.trigger h2 a:hover {
-    color: #ccc;
+	color: #ccc;
 }
+
 .content #titulo.trigger.active h2 {
 	background-position: left bottom;
 }
+
 .toggle_container {
-    border-top: 1px dashed #d6d6d6;     
+	border-top: 1px dashed #d6d6d6;
 }
+
 .toggle_container .block {
-    padding-left: 32px;
-    padding-top: 15px;
-    overflow:hidden;
+	padding-left: 32px;
+	padding-top: 15px;
+	overflow: hidden;
 }
+
 .toggle_container .block p {
-    float:left;
-    padding: 5px 0;
-    margin: 12px;
-    text-align:justify;
+	float: left;
+	padding: 5px 0;
+	margin: 12px;
+	text-align: justify;
 }
+
 .toggle_container h3 {
-    text-align:left;
-    color:#006699;
-    margin: 0 0 10px;
-    padding: 0 8px 5px 18px;
-    background: url(../images/arrow.png) no-repeat 0 0;
+	text-align: left;
+	color: #006699;
+	margin: 0 0 10px;
+	padding: 0 8px 5px 18px;
+	background: url(../images/arrow.png) no-repeat 0 0;
 }
+
 .toggle_container img {
-    float: left;
-    margin: 1px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
+	float: left;
+	margin: 1px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
 }
+
 .toggle_container ul {
-    float:left;
+	float: left;
 }
+
 .toggle_container h3 {
-    margin:0px;
+	margin: 0px;
 }
+
 .toggle_container li {
-    list-style-type:none;
-    margin-bottom: 20px;
-    background: #FFFFFF;
-    width:425px;
-    -moz-border-radius: 5px; 
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    border: 1px solid #CCCCCC;
-    padding: 0px;
-    overflow:hidden;
-}   
-.toggle_container li  span{
-    float:right;
-    margin-top:10px;
-    margin-right:10px;
+	list-style-type: none;
+	margin-bottom: 20px;
+	background: #FFFFFF;
+	width: 425px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #CCCCCC;
+	padding: 0px;
+	overflow: hidden;
 }
+
+.toggle_container li  span {
+	float: right;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
 .message {
-	background: #f3f8fc url(../images/skin/information.png) 8px 50%	no-repeat;
+	background: #f3f8fc url(../images/skin/information.png) 8px 50%
+		no-repeat;
 	border: 1px solid #b2d1ff;
 	color: #006dba;
 	margin: 10px 0 5px 0;
 	padding: 5px 5px 5px 30px;
 	border-radius: 3px;
 }
+
 .messageErro {
-	background: #f2dede url(../images/skin/exclamation.png) 8px 50%	no-repeat;
+	background: #f2dede url(../images/skin/exclamation.png) 8px 50%
+		no-repeat;
 	border: 1px solid #ebccd1;
 	color: #a94442;
 	margin: 10px 0 5px 0;
 	padding: 5px 5px 5px 30px;
 	border-radius: 3px;
 }
+
 .messageAlerta {
-	background: #fcf8e3 url(../images/msgwarn.png) 8px 50%	no-repeat;
+	background: #fcf8e3 url(../images/msgwarn.png) 8px 50% no-repeat;
 	border: 1px solid #faebcc;
 	color: #8a6d3b;
 	margin: 10px 0 5px 0;
 	padding: 5px 5px 5px 30px;
 	border-radius: 3px;
 }
+
 .messageSucesso {
-	background: #dff0d8 url(../images/true.png) 8px 50%	no-repeat;
+	background: #dff0d8 url(../images/true.png) 8px 50% no-repeat;
 	border: 1px solid #d6e9c6;
 	color: #3c763d;
 	margin: 10px 0 5px 0;
 	padding: 5px 5px 5px 30px;
 	border-radius: 3px;
 }
+
 .inscricoesEncerradas {
 	display: inline;
 	background: #fcf8e3 url(../images/msgwarn.png) 5px 50% no-repeat;
-	color: #8a6d3b;	
+	color: #8a6d3b;
 	border: 1px solid;
 	border-color: #faebcc;
 	border-radius: 3px;
-	padding: 1px 5px 1px 25px;	
+	padding: 1px 5px 1px 25px;
 }
+
 .spinner {
 	padding: 5px;
 	position: absolute;
 	right: 0;
 }
+
 .carregando {
 	color: #666;
 	display: none;
 }
+
 .filter {
 	background: #fff url(../images/skin/shadow.jpg) bottom repeat-x;
 	border: 1px solid #ccc;
@@ -136,6 +160,7 @@
 	padding: 3px 3px;
 	margin: 0 0 5 0;
 }
+
 .hidden {
 	display: none;
 }

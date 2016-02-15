@@ -1,96 +1,118 @@
 html {
-    height: 100%;
+	height: 100%;
 }
+
 body {
-	font-family:'Gudea', Arial, Helvetica, sans-serif;
-    font-size: 100%;
-    line-height: 1.5em;
-    color: #333;
-    background-color:#fff;
-	text-align:center;
+	font-family: 'Gudea', Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	line-height: 1.5em;
+	color: #333;
+	background-color: #fff;
+	text-align: center;
 }
+
 h1 {
 	color: #48802c;
 	font-weight: normal;
 	margin: .8em 0 .8em 0;
 }
-h1 span { 
-	color: #666; 
+
+h1 span {
+	color: #666;
 }
+
 h3 {
 	font-style: italic;
 }
+
 form {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
+
 input, select, textarea {
 	background-color: #fcfcfc;
 	border: 1px solid #ccc;
 	padding: 2px 4px;
 }
+
 select {
 	padding: 2px;
 	max-width: 780px;
 }
+
 textarea {
 	width: 250px;
 	height: 150px;
 	vertical-align: top;
 }
+
 input:focus, select:focus, textarea:focus {
 	border: 1px solid #b2d1ff;
 }
+
 a:link, a:visited, a:hover {
 	color: #666;
 	text-decoration: none;
 }
+
 fieldset {
 	width: 460px;
-   	padding: 12px;
+	padding: 12px;
 	border: 1px solid #CCCCCC;
 }
+
 legend {
 	padding: 0px 4px;
 }
+
 table {
 	border: 1px solid #ccc;
 	border-radius: 3px;
 	width: 100%;
 	padding-top: 10px;
 }
+
 td, th {
 	padding: 8px 6px;
 	text-align: left;
 	vertical-align: center;
 }
+
 th {
 	background: #fff url(../images/skin/shadow.jpg) bottom repeat-x;
 	color: #333;
 	padding: 2px 6px;
 }
+
 td.errors select {
 	border: 1px solid red;
 }
+
 td.errors input {
 	border: 1px solid red;
 }
+
 th a:link, th a:visited, th a:hover {
 	color: #333;
 	display: block;
 	text-decoration: none;
 	width: 100%;
 }
+
 th.asc a, th.desc a {
 	background-position: right;
 	background-repeat: no-repeat;
 }
+
 th.asc a {
 	background-image: url(../images/skin/sorted_asc.gif);
 }
+
 th.desc a {
 	background-image: url(../images/skin/sorted_desc.gif);
 }
+
 div.errors {
 	background: #fff3f3;
 	border: 1px solid red;
@@ -98,10 +120,12 @@ div.errors {
 	margin: 10px 0 5px 0;
 	padding: 5px 0 5px 0;
 }
+
 div.errors ul {
 	list-style: none;
 	padding: 0;
 }
+
 div.errors li {
 	background: url(../images/skin/exclamation.png) 8px 0% no-repeat;
 	padding-left: 30px;
