@@ -107,8 +107,7 @@
 #menu .middle { position:absolute; left:18px; height: 20px; width: 135px; top:0px;}
 #rounded-corner
 {
-    font-size: 12px;
-    margin: 45px;
+	margin: 45px;
     width: 700px;
     text-align: left;
     border-collapse: collapse;
@@ -124,8 +123,6 @@
 #rounded-corner th
 {
     padding: 8px;
-    font-weight: bold;
-    font-size: 13px;
     color: #FFFFFF;
     background: #26558C;
 }
@@ -135,7 +132,6 @@
     background: #e8edff;
     border-top: 1px solid #fff;
     color: #669;
-    font-weight:bold;
 }
 #rounded-corner tfoot td.rounded-foot-left
 {

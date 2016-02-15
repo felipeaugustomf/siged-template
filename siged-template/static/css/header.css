@@ -13,12 +13,13 @@
     top: 2.1em;
     right: 2.5em;
 }
-#login{
-    width:450px;
-    float:left;
+#login-div{
+	display: none;
+    width: 450px;
+    float: left;
     margin-left: 234px;
 }
-#login .login{
+#login-div .login{
     width:100px;    
     margin-top:11px;    
     margin-bottom: 12px;
@@ -27,12 +28,11 @@
     border: 1px solid rgb(185,185,185);
     border-top-color: rgb(160,160,160);
     border-radius: 2px;
-    font-size:10px;
     color:#006699;
     padding-left:5px;
     padding-right:5px;
 }
-#login .login:focus{
+#login-div .login:focus{
     border-color: #4d90fe;
     outline: none;
 }
@@ -42,16 +42,12 @@
 .loginLabel{
     color: #FFFFFF;
     text-decoration: none;
-    font-size: 13px;
-    font-weight: bolder;
     text-shadow: 1px 1px #003366;
     margin-right: 23px;
 }
 .bemVindoLabel{
     color: #FFFFFF;
     text-decoration: none;
-    font-size: 12px;
-    font-weight: bolder;
     text-shadow: 1px 1px #003366;
 }
 .botaoSair{
