@@ -1,11 +1,10 @@
 .menu {
-	background-color: #122F5E;
+	height: 100%;
 }
 
 #menu {
 	display: inline-flex;
-	list-style: none;
-	line-height: 45px;
+	height: 100%;
 }
 
 #menu ul, #menu li {
@@ -23,10 +22,8 @@
 
 #menu>li {
 	cursor: pointer;
-	float: left;
 	position: relative;
-	padding: 0px 12px;
-	padding-right: 40px;
+	padding: 32px 32px;
 }
 
 #menu>li:hover {
@@ -56,6 +53,7 @@
 #menu li ul {
 	position: absolute;
 	left: 0px;
+	top: 85px;
 	width: 170px;
 	line-height: 16px;
 	background-color: #184382;
