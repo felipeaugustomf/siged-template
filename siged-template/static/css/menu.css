@@ -5,7 +5,7 @@
 #menu {
 	display: inline-flex;
 	list-style: none;
-	line-height: 40px;
+	line-height: 45px;
 }
 
 #menu ul, #menu li {

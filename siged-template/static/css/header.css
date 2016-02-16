@@ -1,5 +1,5 @@
 #header-content {
-	height: 120px;
+	height: 105px;
 	position: relative;
 	margin: 0px 12%
 }
@@ -43,18 +43,18 @@
 }
 
 .header-section {
-	background-color: #FFFFFF;
+	background-color: #fafafa;
 }
 
 .logo-siged {
 	background-image: url("../images/logo-siged.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 130px;
-	width: 130px;
-	height: 120px;
-	display: inline-block;
-	text-indent: -99999px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 110px;
+    width: 120px;
+    height: 105px;
+    display: inline-block;
+    text-indent: -99999px;
 }
 
 .logo-siged-label {
@@ -64,8 +64,8 @@
 	line-height: 1.8em;
 	text-align: left;
 	position: absolute;
-	left: 140px;
-	top: 16px;
+	left: 135px;
+    top: 10px;
 	text-shadow: 1px 1px 5px rgba(170, 170, 170, 0.7);
 }
 
@@ -85,11 +85,7 @@
 .logo-siged-label #educacional {
 	display: block;
 	font-size: 1.4em;
-	line-height: .7em;
-}
-
-.header-section {
-	background-color: #FFFFFF;
+	line-height: .9em;
 }
 
 .loginLabel {
