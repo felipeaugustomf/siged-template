@@ -1,5 +1,9 @@
-.menu {
-	background-color: #122F5E;
+.menu {	
+	box-shadow: rgba(0, 0, 0, 0.156863) 0px 2px 4px 0px, rgba(0, 0, 0, 0.117647) 0px 2px 10px 0px;
+    background: linear-gradient(rgb(46, 105, 163) 0%, rgb(46, 105, 163) 40%, rgb(39, 89, 144) 100%);
+    border-top: 1px solid rgb(108, 168, 224);
+    border-bottom: 1px solid rgb(24, 67, 130);
+    margin: 0% 12%;
 }
 
 #menu {
@@ -58,7 +62,7 @@
 	left: 0px;
 	width: 170px;
 	line-height: 16px;
-	background-color: #184382;
+	background-color: #275a91;
 	color: #0395CC;
 	display: none;
 	-webkit-background-clip: padding-box;
