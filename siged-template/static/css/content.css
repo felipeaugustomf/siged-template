@@ -1,6 +1,14 @@
+.content-frame {
+	background-color: #EEE;
+	margin: 1.5% 12%;
+	padding: 18px 6px;
+	text-align: left;
+	border: 1px solid #CCC;
+	border-radius: 3px;
+}
+
 .content {
 	background-color: #fdfdfd;
-	margin: 2.5% 12%;
 	padding: 10px 25px;
 	text-align: left;
 	border: 1px solid #CCC;
@@ -8,7 +16,9 @@
 }
 
 .content #titulo.trigger {
-	margin-top: 5px;
+	margin-top: 8px;
+    background-color: hsla(0, 0%, 93%, 0.58);
+    padding: .2em .5em;
 }
 
 .content #titulo.trigger h2 {

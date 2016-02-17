@@ -43,7 +43,13 @@
 }
 
 .header-section {
-	background-color: #fafafa;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#297baa+0,6c9ebf+100 */
+	background: rgb(41,123,170); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(41,123,170,1) 0%, rgba(108,158,191,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(41,123,170,1) 0%,rgba(108,158,191,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(41,123,170,1) 0%,rgba(108,158,191,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#297baa', endColorstr='#6c9ebf',GradientType=0 ); /* IE6-9 */
+	border-top: 6px solid #0e4d82;
 }
 
 .logo-siged {
@@ -58,33 +64,33 @@
 }
 
 .logo-siged-label {
-	font-family: caecilia, times, serif;
-	font-weight: bold;
-	color: #122F5E;
-	line-height: 1.8em;
-	text-align: left;
-	position: absolute;
-	left: 135px;
-    top: 10px;
-	text-shadow: 1px 1px 5px rgba(170, 170, 170, 0.7);
+	font-family: Cambria, Georgia, serif;
+    font-weight: bold;
+    color: #FFFFFF;
+    line-height: 1.6em;
+    text-align: left;
+    position: absolute;
+    left: 135px;
+    top: 12px;
+    text-shadow: 1px 1px 5px rgb(14, 77, 130);
 }
 
 .logo-siged-label #sistema {
 	display: block;
-	font-size: 2.0em;
+	font-size: 1.8em;
 }
 
 .logo-siged-label #de {
-	font-size: 1.4em;
+	font-size: 1.2em;
 }
 
 .logo-siged-label #gestao {
-	font-size: 1.6em;
+	font-size: 1.5em;
 }
 
 .logo-siged-label #educacional {
 	display: block;
-	font-size: 1.4em;
+	font-size: 1.3em;
 	line-height: .9em;
 }
 

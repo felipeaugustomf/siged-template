@@ -99,291 +99,299 @@
 				</div>
 				
 		    </header> 
+		        
+		    <div class="background-nav">
 		             
-	        <nav class="menu">
-	            
-	            <ul id="menu">                       
-	
-	                <li><a href="#">Eventos</a>
-	
-	                    <ul id="eventos">
-	
-	                        <li>
-	                            <a id="previstos" href="/evento/previstos">Previstos</a>
-	
-	                            <ul>
-	                                <li><a href="/evento/eventos/previstos/1">Presencial</a></li>
-	                                <li><a href="/evento/eventos/previstos/2">A Distância (EAD)</a></li>
-	                            </ul>                                    
-	                        </li>
-	
-	                        <li><a id="emandamento" href="/evento/emandamento">Em Andamento</a>
-	                            <ul>
-	                                <li><a href="/evento/eventos/emandamento/1">Presencial</a></li>
-	                                <li><a href="/evento/eventos/emandamento/2">A Distância (EAD)</a></li>
-	                            </ul>
-	                        </li>
-	
-	                        <li><a id="realizados" href="/evento/realizados">Realizados</a>
-	                            <ul>
-	                                <li><a href="/evento/eventos/realizados/1">Presencial</a></li>
-	                                <li><a href="/evento/eventos/realizados/2">A Distância (EAD)</a></li>
-	                            </ul>
-	                        </li>
-	                        
-	                    </ul>
-	
-	                </li>
-	
-	                <li>
-	                    
-	                    <a href="#"> Instrutores</a>			
-	
-	                    <ul id="instrutores">
-	                        
-	                        <li><a href="/instrutor/form">Pré-Cadastro</a></li>
-	
-	                        <li><a href="static/docs/Modelo_Projeto_Evento-Curso_IPC.doc">Modelo de Projeto de Curso/Evento</a></li> 
-	                        
-	                    </ul>
-	                    
-	                </li>
-	
-	                <li><a href="/usuario/esquecisenha">Esqueci minha senha</a></li>
-	
-	                <li><a href="/certificadoEmitido/verificar/form">Validar certificado</a></li>
-	
-	            </ul>
-	            
-	        </nav>
+		        <nav class="menu">
+		            
+		            <ul id="menu">                       
+		
+		                <li><a href="#">Eventos</a>
+		
+		                    <ul id="eventos">
+		
+		                        <li>
+		                            <a id="previstos" href="/evento/previstos">Previstos</a>
+		
+		                            <ul>
+		                                <li><a href="/evento/eventos/previstos/1">Presencial</a></li>
+		                                <li><a href="/evento/eventos/previstos/2">A Distância (EAD)</a></li>
+		                            </ul>                                    
+		                        </li>
+		
+		                        <li><a id="emandamento" href="/evento/emandamento">Em Andamento</a>
+		                            <ul>
+		                                <li><a href="/evento/eventos/emandamento/1">Presencial</a></li>
+		                                <li><a href="/evento/eventos/emandamento/2">A Distância (EAD)</a></li>
+		                            </ul>
+		                        </li>
+		
+		                        <li><a id="realizados" href="/evento/realizados">Realizados</a>
+		                            <ul>
+		                                <li><a href="/evento/eventos/realizados/1">Presencial</a></li>
+		                                <li><a href="/evento/eventos/realizados/2">A Distância (EAD)</a></li>
+		                            </ul>
+		                        </li>
+		                        
+		                    </ul>
+		
+		                </li>
+		
+		                <li>
+		                    
+		                    <a href="#"> Instrutores</a>			
+		
+		                    <ul id="instrutores">
+		                        
+		                        <li><a href="/instrutor/form">Pré-Cadastro</a></li>
+		
+		                        <li><a href="static/docs/Modelo_Projeto_Evento-Curso_IPC.doc">Modelo de Projeto de Curso/Evento</a></li> 
+		                        
+		                    </ul>
+		                    
+		                </li>
+		
+		                <li><a href="/usuario/esquecisenha">Esqueci minha senha</a></li>
+		
+		                <li><a href="/certificadoEmitido/verificar/form">Validar certificado</a></li>
+		
+		            </ul>
+		            
+		        </nav>
+		        
+	        </div>
 		
 		</section>
          
         <section class="content-section">
             
-            <div class="content">
-        	
-				<script type="text/javascript">
+            <div class ="content-frame">
+	            
+	            <div class="content">
+	        	
+					<script type="text/javascript">
+					
+					   jQuery(document).ready(function($) {
+					
+					       var acoesDivs = $(".acoes");
+					
+					       acoesDivs.each(function(pos, div) {
+					
+					           var $div = $(div);
+					
+					           if ($.trim($div.children('#avalia').html()).length == 0)
+					
+					               $div.remove();
+					       });
+					   });
+					
+					</script>
+									
+				    <h1>Eventos Previstos</h1>
 				
-				   jQuery(document).ready(function($) {
+				    <div class="message">Clique no "+" para detalhes do evento.</div>
 				
-				       var acoesDivs = $(".acoes");
+				    <div id="titulo" class="trigger">
+				        <h2>
+				            TREINAMENTO A CONSCIENTIZAÇÃO DO PÚBLICO INTERNO SOBRE A RELEVÂNCIA DAS OUVIDORIAS -
+				            10/03/2016
+				            a
+				            10/03/2016
+				        </h2>
+				    </div>
 				
-				       acoesDivs.each(function(pos, div) {
+				    <div class="toggle_container">
 				
-				           var $div = $(div);
+				        <div class="block">
 				
-				           if ($.trim($div.children('#avalia').html()).length == 0)
+				            <ul class="esq">
 				
-				               $div.remove();
-				       });
-				   });
+				                <h3>Objetivo Geral</h3>
 				
-				</script>
-								
-			    <h1>Eventos Previstos</h1>
-			
-			    <div class="message">Clique no "+" para detalhes do evento.</div>
-			
-			    <div id="titulo" class="trigger">
-			        <h2>
-			            TREINAMENTO A CONSCIENTIZAÇÃO DO PÚBLICO INTERNO SOBRE A RELEVÂNCIA DAS OUVIDORIAS -
-			            10/03/2016
-			            a
-			            10/03/2016
-			        </h2>
-			    </div>
-			
-			    <div class="toggle_container">
-			
-			        <div class="block">
-			
-			            <ul class="esq">
-			
-			                <h3>Objetivo Geral</h3>
-			
-			                <li>
-			                    <p>
-			                        ESTABELECER DIRETRIZES E PRÁTICAS SOBRE A INSTALAÇÃO DE UMA OUVIDORIA NA MELHORIA DA ADMINISTRAÇÃO PÚBLICA
-			                    </p>
-			                </li>
-			
-			                <h3>Detalhes</h3>
-			
-			                <li>
-			                    <p>
-			                        <b>Tipo do Evento: </b>TREINAMENTO 
-			                        <br />
-			                        <b>Eixo Temático: </b>TEMAS DIVERSOS
-			                        <br />
-			                        <b>Público Alvo: </b>SERVIDOR TCE-CE
-			                        <br />
-			                        <b>Modalidade: </b>Presencial 
-			                        <br />
-			                        <b>Carga Horária: </b>2 h/a								
-			                        <br />
-			                        <b>Localização: </b>AUDITÓRIO IPC, FORTALEZA-CE, BRASIL
-			                        <br />
-			                        <b>Provedor: </b> OUVIDORIA DO TRIBUNAL DE CONTAS DO ESTADO DO CEARÁ 
-			                        <br />
-			                        <b>Responsável pelo Evento: </b>TALITA LOPES LEITE
-			                        <br />
-			                        <b>Período Previsto: </b>10/03/2016 a 10/03/2016
-			                        <br />
-			                        <b>Período Pré-Inscrição: </b>10/02/2016 a 10/03/2016
-			                        <br /> 
-			                        <b>Período Realização: </b>10/03/2016 a 10/03/2016
-			                    </p>
-			                </li>
-			
-			                <h3>
-			                    Conteúdo Programático
-			                </h3>
-			
-			                <li>
-			                    <p>
-			                        TREINAMENTO DOS REPRESENTANTES DAS UNIDADES TÉCNICAS DESTE TRIBUNAL DE CONTAS PARA ESTABELECER DIRETRIZES E PRÁTICAS SOBRE A INSTALAÇÃO DE UMA OUVIDORIA NA MELHORIA DA ADMINISTRAÇÃO PÚBLICA
-			                    </p>
-			                </li>
-			
-			                </ul>
-			
-			                <ul>
-			                    <h3>Módulos</h3>
-			
-			                    <li>
-			                        <p>
-			                            <b>MÓDULO ÚNICO</b>
-			                            <br /> 
-			                            <br />
-			                            <b>Período: </b> 10/03/2016 a 10/03/2016
-			                            <br />
-			                            <b>Carga horária: </b>2 h/a
-			                            <br />
-			                            <b>Horário 1° Turno: </b>09:00 - 11:00
-			                            <br />
-			                            <b>Frequência Mínima: </b>75%
-			                            <br />
-			                            <b>Localização: </b>AUDITÓRIO IPC, FORTALEZA-CE, BRASIL
-			                            <br />
-			                            <b>Instrutor(es): </b>WANHA ROCHA
-			                        </p>
-			                    </li>
-			                </ul>
-			
-			            </div>
-			
-			    </div>
-			
-			    <div id="titulo" class="trigger">
-			        <h2>
-			            CURSO BÁSICO DE CONVÊNIOS - LEGISLAÇÃO ESTADUAL E LEI Nº 13.019/2014 -
-			            22/02/2016
-			            a
-			            26/02/2016
-			            <div class="inscricoesEncerradas">
-			                <span style="font-size: 11px; vertical-align: bottom;">LIMITE DE VAGAS ATINGIDO</span>
-			           </div>
-			       </h2>
-			   </div>
-			
-			   <div class="toggle_container">
-			       <div class="block">
-			           <ul class="esq">
-			
-			               <h3>Objetivo Geral</h3>
-			
-			               <li>
-			                   <p>
-			                       INSTRUMENTALIZAR OS SERVIDORES PÚBLICOS A COMPREENSÃO E AO DESENVOLVIMENTO DOS PROCEDIMENTOS NECESSÁRIOS À FORMALIZAÇÃO, EXECUÇÃO E AO CONTROLE DE TRANSFERÊNCIAS VOLUNTÁRIAS DE RECURSOS FINANCEIROS POR MEIO DE CONVÊNIOS E INSTRUMENTOS CONGÊNERES.
-			                   </p>
-			               </li>
-			
-			
-			               <h3>Detalhes</h3>
-			
-			               <li>
-			                   <p>
-			                       <b>Objetivos Específicos: </b>
-			                       <br />
-			                       DISCUTIR OS CONCEITOS E OS PROCEDIMENTOS FUNDAMENTAIS PARA QUE O GESTOR POSSA DESENVOLVER E COMPREENDER TODAS AS ETAPAS NECESSÁRIAS À FORMALIZAÇÃO DE TRANSFERÊNCIAS VOLUNTÁRIAS DE RECURSOS FINANCEIROS POR MEIO DE CONVÊNIOS E INSTRUMENTOS CONGÊNERES.
-			                       <br />
-			                       <b>Tipo do Evento: </b>CURSO 
-			                       <br />
-			                       <b>Eixo Temático: </b>GESTAO PÚBLICA
-			                       <br />
-			                       <b>Público Alvo: </b>SERVIDOR TCE-CE, JURISDICIONADO
-			                       <br />
-			                       <b>Modalidade: </b>Presencial 
-			                       <br />
-			                       <b>Carga Horária: </b>20 h/a								
-			                       <br />
-			                       <b>Localização: </b>AUDITÓRIO IPC, FORTALEZA-CE, BRASIL
-			                       <br />
-			                       <b>Provedor: </b> INSTITUTO PLÁCIDO CASTELO - IPC 
-			                       <br />
-			                       <b>Responsável pelo Evento: </b>FABÍOLA PINHEIRO DONSOUZIS CRUZ
-			                       <br />
-			                       <b>Período Previsto: </b>22/02/2016 a 26/02/2016
-			                       <br />
-			                       <b>Período Pré-Inscrição: </b>20/01/2016 a 18/02/2016
-			                       <br />
-			                       <b>Período Realização: </b>22/02/2016 a 26/02/2016
-			                   </p>
-			               </li>
-			
-			               <h3>Conteúdo Programático</h3>
-			
-			               <li>
-			                   <p>
-			                       MÓDULO I - CONVÊNIO: FUNDAMENTOS;
-			                       <br />
-			                       MÓDULO II - ETAPAS BÁSICAS DOS CONVÊNIOS;
-			                       <br />
-			                       MÓDULO III - EXECUÇÃO, ACOMPANHAMENTO E FISCALIZAÇÃO DE CONVÊNIOS;
-			                       <br />
-			                       MÓDULO IV - PRESTAÇÃO DE CONTAS DE CONTAS E RESPONSABILIZAÇÃO DE GESTORES DE CONVÊNIOS....
-			                   </p>
-			               </li>
-			
-			           </ul>
-			
-			           <ul>
-			               <h3>Módulos</h3>
-			
-			               <li>
-			                   <p>
-			                       <b>MÓDULO ÚNICO</b>
-			                       <br /> 
-			                       <br />
-			                       <b>Período: </b>22/02/2016 a 26/02/2016
-			                       <br />
-			                       <b>Carga horária: </b>20 h/a
-			                       <br />
-			                       <b>Horário 1° Turno: </b>08:00 - 12:00
-			                       <br />
-			                       <b>Frequência Mínima: </b>75%
-			                       <br />
-			                       <b>Localização: </b>AUDITÓRIO IPC, FORTALEZA-CE, BRASIL
-			                       <br />
-			                       <b>Instrutor(es): </b>HENRIQUE BEZERRA CARDOSO
-			                   </p>
-			               </li>
-			
-			               <div style="margin: 33px 2px">
-			                   <!-- BOTÃO DE PRÉ-INSCRIÇÃO -->
-			                    <a id="linkPreInscricao" href="/evento/inscricao/5581" title="Pré-Inscrição">										
-			                        <span>FAÇA SUA PRÉ-INSCRIÇÃO</span>										
-			                    </a>
-			                </div>
-			            </ul>                                                
-			
-			        </div>                                        
-			
-			    </div>		                                            
-               
-			</div>
-           
+				                <li>
+				                    <p>
+				                        ESTABELECER DIRETRIZES E PRÁTICAS SOBRE A INSTALAÇÃO DE UMA OUVIDORIA NA MELHORIA DA ADMINISTRAÇÃO PÚBLICA
+				                    </p>
+				                </li>
+				
+				                <h3>Detalhes</h3>
+				
+				                <li>
+				                    <p>
+				                        <b>Tipo do Evento: </b>TREINAMENTO 
+				                        <br />
+				                        <b>Eixo Temático: </b>TEMAS DIVERSOS
+				                        <br />
+				                        <b>Público Alvo: </b>SERVIDOR TCE-CE
+				                        <br />
+				                        <b>Modalidade: </b>Presencial 
+				                        <br />
+				                        <b>Carga Horária: </b>2 h/a								
+				                        <br />
+				                        <b>Localização: </b>AUDITÓRIO IPC, FORTALEZA-CE, BRASIL
+				                        <br />
+				                        <b>Provedor: </b> OUVIDORIA DO TRIBUNAL DE CONTAS DO ESTADO DO CEARÁ 
+				                        <br />
+				                        <b>Responsável pelo Evento: </b>TALITA LOPES LEITE
+				                        <br />
+				                        <b>Período Previsto: </b>10/03/2016 a 10/03/2016
+				                        <br />
+				                        <b>Período Pré-Inscrição: </b>10/02/2016 a 10/03/2016
+				                        <br /> 
+				                        <b>Período Realização: </b>10/03/2016 a 10/03/2016
+				                    </p>
+				                </li>
+				
+				                <h3>
+				                    Conteúdo Programático
+				                </h3>
+				
+				                <li>
+				                    <p>
+				                        TREINAMENTO DOS REPRESENTANTES DAS UNIDADES TÉCNICAS DESTE TRIBUNAL DE CONTAS PARA ESTABELECER DIRETRIZES E PRÁTICAS SOBRE A INSTALAÇÃO DE UMA OUVIDORIA NA MELHORIA DA ADMINISTRAÇÃO PÚBLICA
+				                    </p>
+				                </li>
+				
+				                </ul>
+				
+				                <ul>
+				                    <h3>Módulos</h3>
+				
+				                    <li>
+				                        <p>
+				                            <b>MÓDULO ÚNICO</b>
+				                            <br /> 
+				                            <br />
+				                            <b>Período: </b> 10/03/2016 a 10/03/2016
+				                            <br />
+				                            <b>Carga horária: </b>2 h/a
+				                            <br />
+				                            <b>Horário 1° Turno: </b>09:00 - 11:00
+				                            <br />
+				                            <b>Frequência Mínima: </b>75%
+				                            <br />
+				                            <b>Localização: </b>AUDITÓRIO IPC, FORTALEZA-CE, BRASIL
+				                            <br />
+				                            <b>Instrutor(es): </b>WANHA ROCHA
+				                        </p>
+				                    </li>
+				                </ul>
+				
+				            </div>
+				
+				    </div>
+				
+				    <div id="titulo" class="trigger">
+				        <h2>
+				            CURSO BÁSICO DE CONVÊNIOS - LEGISLAÇÃO ESTADUAL E LEI Nº 13.019/2014 -
+				            22/02/2016
+				            a
+				            26/02/2016
+				            <div class="inscricoesEncerradas">
+				                <span style="font-size: 11px; vertical-align: bottom;">LIMITE DE VAGAS ATINGIDO</span>
+				           </div>
+				       </h2>
+				   </div>
+				
+				   <div class="toggle_container">
+				       <div class="block">
+				           <ul class="esq">
+				
+				               <h3>Objetivo Geral</h3>
+				
+				               <li>
+				                   <p>
+				                       INSTRUMENTALIZAR OS SERVIDORES PÚBLICOS A COMPREENSÃO E AO DESENVOLVIMENTO DOS PROCEDIMENTOS NECESSÁRIOS À FORMALIZAÇÃO, EXECUÇÃO E AO CONTROLE DE TRANSFERÊNCIAS VOLUNTÁRIAS DE RECURSOS FINANCEIROS POR MEIO DE CONVÊNIOS E INSTRUMENTOS CONGÊNERES.
+				                   </p>
+				               </li>
+				
+				
+				               <h3>Detalhes</h3>
+				
+				               <li>
+				                   <p>
+				                       <b>Objetivos Específicos: </b>
+				                       <br />
+				                       DISCUTIR OS CONCEITOS E OS PROCEDIMENTOS FUNDAMENTAIS PARA QUE O GESTOR POSSA DESENVOLVER E COMPREENDER TODAS AS ETAPAS NECESSÁRIAS À FORMALIZAÇÃO DE TRANSFERÊNCIAS VOLUNTÁRIAS DE RECURSOS FINANCEIROS POR MEIO DE CONVÊNIOS E INSTRUMENTOS CONGÊNERES.
+				                       <br />
+				                       <b>Tipo do Evento: </b>CURSO 
+				                       <br />
+				                       <b>Eixo Temático: </b>GESTAO PÚBLICA
+				                       <br />
+				                       <b>Público Alvo: </b>SERVIDOR TCE-CE, JURISDICIONADO
+				                       <br />
+				                       <b>Modalidade: </b>Presencial 
+				                       <br />
+				                       <b>Carga Horária: </b>20 h/a								
+				                       <br />
+				                       <b>Localização: </b>AUDITÓRIO IPC, FORTALEZA-CE, BRASIL
+				                       <br />
+				                       <b>Provedor: </b> INSTITUTO PLÁCIDO CASTELO - IPC 
+				                       <br />
+				                       <b>Responsável pelo Evento: </b>FABÍOLA PINHEIRO DONSOUZIS CRUZ
+				                       <br />
+				                       <b>Período Previsto: </b>22/02/2016 a 26/02/2016
+				                       <br />
+				                       <b>Período Pré-Inscrição: </b>20/01/2016 a 18/02/2016
+				                       <br />
+				                       <b>Período Realização: </b>22/02/2016 a 26/02/2016
+				                   </p>
+				               </li>
+				
+				               <h3>Conteúdo Programático</h3>
+				
+				               <li>
+				                   <p>
+				                       MÓDULO I - CONVÊNIO: FUNDAMENTOS;
+				                       <br />
+				                       MÓDULO II - ETAPAS BÁSICAS DOS CONVÊNIOS;
+				                       <br />
+				                       MÓDULO III - EXECUÇÃO, ACOMPANHAMENTO E FISCALIZAÇÃO DE CONVÊNIOS;
+				                       <br />
+				                       MÓDULO IV - PRESTAÇÃO DE CONTAS DE CONTAS E RESPONSABILIZAÇÃO DE GESTORES DE CONVÊNIOS....
+				                   </p>
+				               </li>
+				
+				           </ul>
+				
+				           <ul>
+				               <h3>Módulos</h3>
+				
+				               <li>
+				                   <p>
+				                       <b>MÓDULO ÚNICO</b>
+				                       <br /> 
+				                       <br />
+				                       <b>Período: </b>22/02/2016 a 26/02/2016
+				                       <br />
+				                       <b>Carga horária: </b>20 h/a
+				                       <br />
+				                       <b>Horário 1° Turno: </b>08:00 - 12:00
+				                       <br />
+				                       <b>Frequência Mínima: </b>75%
+				                       <br />
+				                       <b>Localização: </b>AUDITÓRIO IPC, FORTALEZA-CE, BRASIL
+				                       <br />
+				                       <b>Instrutor(es): </b>HENRIQUE BEZERRA CARDOSO
+				                   </p>
+				               </li>
+				
+				               <div style="margin: 33px 2px">
+				                   <!-- BOTÃO DE PRÉ-INSCRIÇÃO -->
+				                    <a id="linkPreInscricao" href="/evento/inscricao/5581" title="Pré-Inscrição">										
+				                        <span>FAÇA SUA PRÉ-INSCRIÇÃO</span>										
+				                    </a>
+				                </div>
+				            </ul>                                                
+				
+				        </div>                                        
+				
+				    </div>		                                            
+	               
+				</div>
+				
+           	</div>
+           	
 		</section>       	
 	
 		<section class="footer-section"></section>
