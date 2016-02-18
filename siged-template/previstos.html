@@ -65,7 +65,11 @@
                         } 
                     }		
                 });
-
+                
+                
+				$("#login-button").click(function(){
+					$("#login-div").toggle("slow");
+				});
             });
         </script>
     </head>
@@ -86,15 +90,26 @@
 			    		<label id="de">de</label>
 			    		<label id="gestao">Gestão</label>
 			    		<label id="educacional">Educacional</label>			    	
-			    	</span>			
-				    <div id="login-div">
-	                    <form action="/j_spring_security_check" method="post">
-	                        <span class="loginLabel">Login</span>
-	                        <input class="login" type='text' name='j_username' id='j_username' placeholder="Usuário" />
-	                        <input class="login" type='password' name='j_password' id='j_password' placeholder="Senha" />
-	                        <input class="submit" type='submit' value='Entrar'/>
-	                    </form>
-				    </div>			
+			    	</span>
+			    	
+			    	<ul id="login-ul">
+			    		<li id="login-li">
+			    			<a id="login-button">Login</a>
+			    			<div id="login-div">
+			                    <form id="login-form" action="/j_spring_security_check" method="post">
+			                        <!-- <span class="loginLabel">Login</span> -->
+			                       	
+			                        	<input class="login" type='text' 
+			                        		name='j_username' id='j_username' placeholder="Usuário" />
+			                        
+			                        	<input class="login" type='password' 
+			                        		name='j_password' id='j_password' placeholder="Senha" />
+			                        
+			                        <input class="submit" type='submit' value='Entrar'/>
+			                    </form>
+						    </div>
+			    		</li>
+			    	</ul>
 				
 				</div>
 				
