@@ -37,13 +37,14 @@
     height: 89%;   
 }
 
-.content #titulo.trigger h2 {
-	height: 46px;
-	text-align: left;
-	display: table-cell;
-	vertical-align: middle;
+.content #titulo.trigger #content {
 	border-left: 1px solid #ccc;
-	padding-left: 10px;
+	padding: .5em 1em;
+	position: relative;
+}
+
+.content #titulo.trigger h2 {
+	display: inline;
 }
 
 .content #titulo.trigger h2 a {
@@ -54,6 +55,9 @@
 
 .content #titulo.trigger h2 a:hover {
 	color: #ccc;
+}
+
+.content #titulo.trigger #data {
 }
 
 .content #titulo.trigger.active {
