@@ -16,9 +16,25 @@
 }
 
 .content #titulo.trigger {
+	position: relative;
 	margin-top: 8px;
     background-color: hsla(0, 0%, 93%, 0.58);
     padding: .2em .5em;
+    padding-left: 40px;
+    border: 1px solid #CCC;
+    border-left: 5px solid #275990;
+}
+
+.content #titulo.trigger:before {
+	content: '';
+    background-image: url('../images/arrow-down.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    position: absolute;
+    left: 10px;
+    width: 20px;
+    height: 89%;   
 }
 
 .content #titulo.trigger h2 {
@@ -26,6 +42,8 @@
 	text-align: left;
 	display: table-cell;
 	vertical-align: middle;
+	border-left: 1px solid #ccc;
+	padding-left: 10px;
 }
 
 .content #titulo.trigger h2 a {
@@ -38,12 +56,16 @@
 	color: #ccc;
 }
 
-.content #titulo.trigger.active h2 {
-	background-position: left bottom;
+.content #titulo.trigger.active {
+	border-left: 5px solid #48802C;
+}
+
+.content #titulo.trigger.active:before {
+    background-image: url('../images/arrow-up.png');
+    height: 84%;    
 }
 
 .toggle_container {
-	border-top: 1px dashed #d6d6d6;
 }
 
 .toggle_container .block {
