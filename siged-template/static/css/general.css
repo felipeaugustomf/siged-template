@@ -7,8 +7,10 @@ body {
 	font-size: 100%;
 	line-height: 1.5em;
 	color: #333;
-	background-color: #fafafa;
 	text-align: center;
+	background-color: #fafafa;
+	background-image: url('../images/stripes.png');
+	background-repeat: repeat;
 }
 
 h1 {
