@@ -9,15 +9,15 @@
 
 .content {
 	background-color: #fdfdfd;
-	padding: 10px 25px;
+	padding: 10px 25px 25px 25px;
 	text-align: left;
 	border: 1px solid #CCC;
 	border-radius: 3px;
 }
 
 .content #titulo.trigger {
-	position: relative;
-	margin-top: 8px;
+	position: relative;    
+	margin-top: 15px;
     background-color: hsla(0, 0%, 93%, 0.58);
     padding: .2em .5em;
     padding-left: 40px;
@@ -75,9 +75,10 @@
 }
 
 .toggle_container .block {
-	padding-left: 32px;
-	padding-top: 15px;
 	overflow: hidden;
+	padding: .5em 1.2em;    
+    border: 1px solid #ccc;
+    border-top: 0px;
 }
 
 .toggle_container .block p {
