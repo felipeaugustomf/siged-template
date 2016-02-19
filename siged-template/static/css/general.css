@@ -13,7 +13,7 @@ body {
 	background-repeat: repeat;
 }
 
-h1 {
+h1, h4 {
 	color: #48802c;
     font-size: 1.2em;
     text-indent: 10px;
@@ -22,8 +22,8 @@ h1 {
     border-bottom: 1px solid #CCCCCC;
 }
 
-h1 span {
-	color: #666;
+h4{
+	margin: 1.5em 0;
 }
 
 form {
@@ -48,6 +48,10 @@ textarea {
 	vertical-align: top;
 }
 
+strong {
+	font-weight: bold;
+}
+
 input:focus, select:focus, textarea:focus {
 	border: 1px solid #b2d1ff;
 }
@@ -58,13 +62,21 @@ a:link, a:visited, a:hover {
 }
 
 fieldset {
-	width: 460px;
-	padding: 12px;
 	border: 1px solid #CCCCCC;
 }
 
 legend {
 	padding: 0px 4px;
+}
+
+dt, dd { 
+	float: left 
+}
+dt { 
+	clear:both;
+	font-weight: bold;
+    color: #595959;
+    margin: 0 .5em .3em 0; 
 }
 
 table {

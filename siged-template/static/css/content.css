@@ -1,3 +1,7 @@
+.content-section{	
+	
+}
+
 .content-frame {
 	background-color: #EEE;
 	margin: 1.5% 12%;
@@ -72,59 +76,47 @@
 }
 
 .toggle_container {
-}
-
-.toggle_container .block {
 	overflow: hidden;
 	padding: .5em 1.2em;    
     border: 1px solid #ccc;
     border-top: 0px;
+    font-size: .9em;
 }
 
-.toggle_container .block p {
-	float: left;
-	padding: 5px 0;
-	margin: 12px;
+.toggle_container p {
 	text-align: justify;
 }
 
-.toggle_container h3 {
-	text-align: left;
-	color: #006699;
-	margin: 0 0 10px;
-	padding: 0 8px 5px 18px;
-	background: url(../images/arrow.png) no-repeat 0 0;
+.toggle_container fieldset {
+	padding: 1em 1.3em;
 }
 
-.toggle_container img {
-	float: left;
-	margin: 1px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
+.toggle_container #evento-info {
+	
 }
 
-.toggle_container ul {
-	float: left;
+.toggle_container #modulo-info {
+	
 }
 
-.toggle_container li {
-	list-style-type: none;
-	margin-bottom: 20px;
-	background: #FFFFFF;
-	width: 425px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
-	border: 1px solid #CCCCCC;
-	padding: 0px;
-	overflow: hidden;
+.toggle_container #evento-info #detalhes {
+	
 }
 
-.toggle_container li  span {
-	float: right;
-	margin-top: 10px;
-	margin-right: 10px;
+.toggle_container #evento-info#objetivo-geral {
+	
+}
+
+.toggle_container #evento-info #conteudo-programatico {
+	
+}
+
+.toggle_container #modulo-info .modulos {
+	
+}
+
+.toggle_container fieldset {
+	padding: 1em 1.3em;
 }
 
 .message {

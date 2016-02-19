@@ -1,5 +1,35 @@
 .footer-section {
-	height: 200px;
     background-color: #778899;
-    margin-top: 30em;
+    border-top: 7px solid #506987;
+    border-bottom: 7px solid #506987;
+    padding: 2em;
+    margin-top: 32em;
+    font-size: 0.90em;
+    color: #FFF;
+}
+
+#links li{
+	padding-bottom: 2.5em;
+}
+
+#logo-tce{
+	background-image: url("../images/logo-tce-branca.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200px;
+    width: 200px;
+    height: 100px;
+    display: inline-block;
+    text-indent: -99999px;
+}
+
+#logo-ipc{
+	background-image: url("../images/logo-ipc.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90px;
+    width: 90px;
+    height: 100px;
+    display: inline-block;
+    text-indent: -99999px;
 }
