@@ -20,10 +20,13 @@ h1, h4 {
     margin: .5em 0 1.5em 0;
     padding-bottom: .4em;
     border-bottom: 1px solid #CCCCCC;
+    clear: both;
 }
 
 h4{
-	margin: 1.5em 0;
+	margin: 0 0 .5em 0;
+	font-size: 1em;
+    padding-top: 0.5em;
 }
 
 form {

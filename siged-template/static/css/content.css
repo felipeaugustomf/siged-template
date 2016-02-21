@@ -19,7 +19,7 @@
 	border-radius: 3px;
 }
 
-.content #titulo.trigger {
+.title_toggle_container {
 	position: relative;    
 	margin-top: 15px;
     background-color: hsla(0, 0%, 93%, 0.58);
@@ -32,7 +32,7 @@
     box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2);
 }
 
-.content #titulo.trigger:before {
+.title_toggle_container:before {
 	content: '';
     background-image: url('../images/arrow-down.png');
     background-repeat: no-repeat;
@@ -44,35 +44,35 @@
     height: 89%;   
 }
 
-.content #titulo.trigger #content {
+.title_toggle_container div {
 	border-left: 1px solid #ccc;
 	padding: .5em 1em;
 	position: relative;
 }
 
-.content #titulo.trigger #content h2 {
+.title_toggle_container div  h2 {
 	color: rgba(18,47,94,0.85);
     font-weight: bold;
 }
 
-.content #titulo.trigger #content h3 {
+.title_toggle_container div h3 {
 	margin-top: 3px;
     font-size: .95em;
     color: #999;
     text-indent: 15px;
 }
 
-.content #titulo.trigger.active {
+.title_toggle_container.active {
 	border-left: 5px solid #48802C;
 }
 
-.content #titulo.trigger.active #content h2{
-	color: rgba(72,128,44,0.9);
-}
-
-.content #titulo.trigger.active:before {
+.title_toggle_container.active:before {
     background-image: url('../images/arrow-up.png');
     height: 84%;    
+}
+
+.title_toggle_container.active div h2{
+	color: rgba(72,128,44,0.9);
 }
 
 .toggle_container {
@@ -91,32 +91,40 @@
 	padding: 1em 1.3em;
 }
 
-.toggle_container #evento-info {
+.toggle_container .objetivo-geral {
+	clear: both;
+}
+
+.toggle_container .left {
+	float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding-right: 1%;
+}
+
+.toggle_container .left .detalhes {
 	
 }
 
-.toggle_container #modulo-info {
+.toggle_container .left .conteudo-programatico {
 	
 }
 
-.toggle_container #evento-info #detalhes {
-	
+.toggle_container .right {
+	float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding-left: 1%;
 }
 
-.toggle_container #evento-info#objetivo-geral {
-	
+.toggle_container .right .modulos {
+	padding-top: .2em;
 }
 
-.toggle_container #evento-info #conteudo-programatico {
-	
-}
-
-.toggle_container #modulo-info .modulos {
-	
-}
-
-.toggle_container fieldset {
-	padding: 1em 1.3em;
+.toggle_container .right .botaoPreInscricao {
+	display: inline-flex;
+    float: right;
+    padding-top: 2em;
 }
 
 .message {

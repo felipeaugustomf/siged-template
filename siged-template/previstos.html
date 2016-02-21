@@ -46,7 +46,7 @@
 
                 $(".toggle_container").hide();		
 
-                $("#titulo.trigger").click(function() {
+                $(".title_toggle_container").click(function() {
                     $(this).toggleClass("active").next().slideToggle("slow");
                 });
 
@@ -119,27 +119,30 @@
 		            
 		            <ul id="menu">                       
 		
-		                <li><a href="#">Eventos</a>
+		                <li>
+		                	
+		                	<label>Eventos</label>
 		
 		                    <ul id="eventos">
 		
 		                        <li>
-		                            <a id="previstos" href="/evento/previstos">Previstos</a>
-		
+		                            <a id="previstos" href="/evento/previstos">Previstos</a>		
 		                            <ul>
 		                                <li><a href="/evento/eventos/previstos/1">Presencial</a></li>
 		                                <li><a href="/evento/eventos/previstos/2">A Distância (EAD)</a></li>
 		                            </ul>                                    
 		                        </li>
 		
-		                        <li><a id="emandamento" href="/evento/emandamento">Em Andamento</a>
+		                        <li>
+		                        	<a id="emandamento" href="/evento/emandamento">Em Andamento</a>
 		                            <ul>
 		                                <li><a href="/evento/eventos/emandamento/1">Presencial</a></li>
 		                                <li><a href="/evento/eventos/emandamento/2">A Distância (EAD)</a></li>
 		                            </ul>
 		                        </li>
 		
-		                        <li><a id="realizados" href="/evento/realizados">Realizados</a>
+		                        <li>
+		                        	<a id="realizados" href="/evento/realizados">Realizados</a>
 		                            <ul>
 		                                <li><a href="/evento/eventos/realizados/1">Presencial</a></li>
 		                                <li><a href="/evento/eventos/realizados/2">A Distância (EAD)</a></li>
@@ -152,7 +155,7 @@
 		
 		                <li>
 		                    
-		                    <a href="#"> Instrutores</a>			
+		                    <label> Instrutores</label>			
 		
 		                    <ul id="instrutores">
 		                        
@@ -200,8 +203,8 @@
 									
 				    <h1>Eventos Previstos</h1>
 								
-				    <div id="titulo" class="trigger">
-				        <div id="content">
+				    <div class="title_toggle_container">
+				        <div>
 					        <h2>
 					            TREINAMENTO A CONSCIENTIZAÇÃO DO PÚBLICO INTERNO SOBRE A RELEVÂNCIA DAS OUVIDORIAS
 					        </h2>
@@ -215,13 +218,14 @@
 								
 						<div class="messageAlerta">Inscrições Encerradas.</div>
 				
-						<div id="evento-info">
-							<fieldset id="objetivo-geral">							
-								<legend>Objetivo Geral</legend>
-								<p>ESTABELECER DIRETRIZES E PRÁTICAS SOBRE A INSTALAÇÃO DE UMA OUVIDORIA NA MELHORIA DA ADMINISTRAÇÃO PÚBLICA</p>
-							</fieldset>
+						<fieldset class="objetivo-geral">							
+							<legend>Objetivo Geral</legend>
+							<p>ESTABELECER DIRETRIZES E PRÁTICAS SOBRE A INSTALAÇÃO DE UMA OUVIDORIA NA MELHORIA DA ADMINISTRAÇÃO PÚBLICA</p>
+						</fieldset>
+						
+						<div class="left">							
 					 
-					        <fieldset id="detalhes">
+					        <fieldset class="detalhes">
 					        	<legend>Detalhes</legend>				        	
 		                        <dl>
 			                        <dt>Tipo do Evento:</dt><dd>TREINAMENTO</dd> 
@@ -238,19 +242,19 @@
 		                        </dl>	                        	                    
 					        </fieldset>            
 							
-							<fieldset id="conteudo-programatico">
+							<fieldset class="conteudo-programatico">
 								<legend>Conteúdo Programático</legend>
 								<p>
 			                        TREINAMENTO DOS REPRESENTANTES DAS UNIDADES TÉCNICAS DESTE TRIBUNAL DE CONTAS PARA ESTABELECER DIRETRIZES E PRÁTICAS SOBRE A INSTALAÇÃO DE UMA OUVIDORIA NA MELHORIA DA ADMINISTRAÇÃO PÚBLICA
 			                    </p>
 							</fieldset>
-				        </div>
-				        
-				        <div id="modulo-info">
-					        <h4>Módulos</h4> 
-					                
+							
+				        </div>				        
+				        <div class="right">				                
 					        <fieldset class="modulos">
-					        	<legend>MÓDULO ÚNICO</legend>
+					        	<legend>Módulos</legend>
+					        	
+					        	<h4>MÓDULO ÚNICO</h4>
 					        	<dl>	                            
 		                            <dt>Período:</dt><dd>10/03/2016 a 10/03/2016</dd>
 		                            <dt>Carga horária:</dt><dd>2 h/a</dd>
@@ -259,13 +263,19 @@
 		                            <dt>Localização:</dt><dd>AUDITÓRIO IPC, FORTALEZA-CE, BRASIL</dd>
 		                            <dt>Instrutor(es):</dt><dd>WANHA ROCHA</dd>
 		                        </dl>
-					        </fieldset>			                    
+					        </fieldset>	
+					        
+					        <div class="botaoPreInscricao">
+							     <a id="linkPreInscricao" href="/evento/inscricao/5581" title="Pré-Inscrição">										
+							         <span>FAÇA SUA PRÉ-INSCRIÇÃO</span>										
+							     </a>
+							</div>		                    
 						</div>
-						
+									
 					</div>
 				
-				    <div id="titulo" class="trigger">
-				        <div id="content">
+				    <div class="title_toggle_container">
+				        <div>
 					        <h2>
 					            CURSO BÁSICO DE CONVÊNIOS - LEGISLAÇÃO ESTADUAL E LEI Nº 13.019/2014					            				            
 					       </h2>
@@ -277,100 +287,95 @@
 				
 				   	<div class="toggle_container">				          
 				
-						<fieldset>
+						<fieldset class="objetivo-geral">
 		               		<legend>Objetivo Geral</legend>				               				               
 		                  	<p>INSTRUMENTALIZAR OS SERVIDORES PÚBLICOS A COMPREENSÃO E AO DESENVOLVIMENTO DOS PROCEDIMENTOS NECESSÁRIOS À FORMALIZAÇÃO, EXECUÇÃO E AO CONTROLE DE TRANSFERÊNCIAS VOLUNTÁRIAS DE RECURSOS FINANCEIROS POR MEIO DE CONVÊNIOS E INSTRUMENTOS CONGÊNERES.</p>
 		              	</fieldset>
 		
-						
-						<fieldset>
-		               		<legend>Detalhes</legend>				               
-		                	<dl>
-								<dt>Objetivos Específicos: </dt>
-								<dd>DISCUTIR OS CONCEITOS E OS PROCEDIMENTOS FUNDAMENTAIS PARA QUE O GESTOR POSSA DESENVOLVER E COMPREENDER TODAS AS ETAPAS NECESSÁRIAS À FORMALIZAÇÃO DE TRANSFERÊNCIAS VOLUNTÁRIAS DE RECURSOS FINANCEIROS POR MEIO DE CONVÊNIOS E INSTRUMENTOS CONGÊNERES.</dd>
-								<dt>Tipo do Evento:</dt><dd>CURSO</dd> 
-								<dt>Eixo Temático:</dt><dd>GESTAO PÚBLICA</dd>
-								<dt>Público Alvo:</dt><dd>SERVIDOR TCE-CE, JURISDICIONADO</dd>
-								<dt>Modalidade:</dt><dd>Presencial</dd> 
-								<dt>Carga Horária:</dt><dd>20 h/a</dd>								
-								<dt>Localização:</dt><dd>AUDITÓRIO IPC, FORTALEZA-CE, BRASIL</dd>
-								<dt>Provedor:</dt><dd>INSTITUTO PLÁCIDO CASTELO - IPC</dd> 
-								<dt>Responsável pelo Evento:</dt><dd>FABÍOLA PINHEIRO DONSOUZIS CRUZ</dd>
-								<dt>Período Previsto:</dt><dd>22/02/2016 a 26/02/2016</dd>
-								<dt>Período Pré-Inscrição:</dt><dd>20/01/2016 a 18/02/2016</dd>
-								<dt>Período Realização:</dt><dd>22/02/2016 a 26/02/2016</dd>
-		                  	</dl>
-		               	</fieldset>
-		
-						<fieldset>
-							<legend>Conteúdo Programático</legend>							
-							<p>
-							    MÓDULO I - CONVÊNIO: FUNDAMENTOS;
-							    <br />
-							    MÓDULO II - ETAPAS BÁSICAS DOS CONVÊNIOS;
-							    <br />
-							    MÓDULO III - EXECUÇÃO, ACOMPANHAMENTO E FISCALIZAÇÃO DE CONVÊNIOS;
-							    <br />
-							    MÓDULO IV - PRESTAÇÃO DE CONTAS DE CONTAS E RESPONSABILIZAÇÃO DE GESTORES DE CONVÊNIOS....
-							</p>
-		              	</fieldset>
-		
-						<h4>Módulos</h4>
+						<div class="left">
+							<fieldset class="detalhes">
+			               		<legend>Detalhes</legend>				               
+			                	<dl>
+									<dt>Objetivos Específicos: </dt>
+									<dd>DISCUTIR OS CONCEITOS E OS PROCEDIMENTOS FUNDAMENTAIS PARA QUE O GESTOR POSSA DESENVOLVER E COMPREENDER TODAS AS ETAPAS NECESSÁRIAS À FORMALIZAÇÃO DE TRANSFERÊNCIAS VOLUNTÁRIAS DE RECURSOS FINANCEIROS POR MEIO DE CONVÊNIOS E INSTRUMENTOS CONGÊNERES.</dd>
+									<dt>Tipo do Evento:</dt><dd>CURSO</dd> 
+									<dt>Eixo Temático:</dt><dd>GESTAO PÚBLICA</dd>
+									<dt>Público Alvo:</dt><dd>SERVIDOR TCE-CE, JURISDICIONADO</dd>
+									<dt>Modalidade:</dt><dd>Presencial</dd> 
+									<dt>Carga Horária:</dt><dd>20 h/a</dd>								
+									<dt>Localização:</dt><dd>AUDITÓRIO IPC, FORTALEZA-CE, BRASIL</dd>
+									<dt>Provedor:</dt><dd>INSTITUTO PLÁCIDO CASTELO - IPC</dd> 
+									<dt>Responsável pelo Evento:</dt><dd>FABÍOLA PINHEIRO DONSOUZIS CRUZ</dd>
+									<dt>Período Previsto:</dt><dd>22/02/2016 a 26/02/2016</dd>
+									<dt>Período Pré-Inscrição:</dt><dd>20/01/2016 a 18/02/2016</dd>
+									<dt>Período Realização:</dt><dd>22/02/2016 a 26/02/2016</dd>
+			                  	</dl>
+			               	</fieldset>
+			
+							<fieldset class="conteudo-programatico">
+								<legend>Conteúdo Programático</legend>							
+								<p>
+								    MÓDULO I - CONVÊNIO: FUNDAMENTOS;
+								    <br />
+								    MÓDULO II - ETAPAS BÁSICAS DOS CONVÊNIOS;
+								    <br />
+								    MÓDULO III - EXECUÇÃO, ACOMPANHAMENTO E FISCALIZAÇÃO DE CONVÊNIOS;
+								    <br />
+								    MÓDULO IV - PRESTAÇÃO DE CONTAS DE CONTAS E RESPONSABILIZAÇÃO DE GESTORES DE CONVÊNIOS....
+								</p>
+			              	</fieldset>					
+		           		</div>
 		           		
-		           		<fieldset>				           	
-							<legend>MÓDULO I</legend>							
-							<dl>
-							    <dt>Período:</dt><dd>22/02/2016 a 26/02/2016</dd>
-							    <dt>Carga horária:</dt><dd>20 h/a</dd>
-							    <dt>Horário 1° Turno:</dt><dd>08:00 - 12:00</dd>
-							    <dt>Frequência Mínima:</dt><dd>75%</dd>
-							   	<dt>Localização:</dt><dd>AUDITÓRIO IPC, FORTALEZA-CE, BRASIL</dd>
-							    <dt>Instrutor(es):</dt><dd>HENRIQUE BEZERRA CARDOSO</dd>
-							</dl>
-		               	</fieldset>
-		
-						<fieldset>				           	
-							<legend>MÓDULO II</legend>							
-							<dl>
-							    <dt>Período:</dt><dd>22/02/2016 a 26/02/2016</dd>
-							    <dt>Carga horária:</dt><dd>20 h/a</dd>
-							    <dt>Horário 1° Turno:</dt><dd>08:00 - 12:00</dd>
-							    <dt>Frequência Mínima:</dt><dd>75%</dd>
-							   	<dt>Localização:</dt><dd>AUDITÓRIO IPC, FORTALEZA-CE, BRASIL</dd>
-							    <dt>Instrutor(es):</dt><dd>HENRIQUE BEZERRA CARDOSO</dd>
-							</dl>
-		               	</fieldset>
-		               	
-		               	<fieldset>				           	
-							<legend>MÓDULO III</legend>							
-							<dl>
-							    <dt>Período:</dt><dd>22/02/2016 a 26/02/2016</dd>
-							    <dt>Carga horária:</dt><dd>20 h/a</dd>
-							    <dt>Horário 1° Turno:</dt><dd>08:00 - 12:00</dd>
-							    <dt>Frequência Mínima:</dt><dd>75%</dd>
-							   	<dt>Localização:</dt><dd>AUDITÓRIO IPC, FORTALEZA-CE, BRASIL</dd>
-							    <dt>Instrutor(es):</dt><dd>HENRIQUE BEZERRA CARDOSO</dd>
-							</dl>
-		               	</fieldset>
-		               	
-		               	<fieldset>				           	
-							<legend>MÓDULO IV</legend>							
-							<dl>
-							    <dt>Período:</dt><dd>22/02/2016 a 26/02/2016</dd>
-							    <dt>Carga horária:</dt><dd>20 h/a</dd>
-							    <dt>Horário 1° Turno:</dt><dd>08:00 - 12:00</dd>
-							    <dt>Frequência Mínima:</dt><dd>75%</dd>
-							   	<dt>Localização:</dt><dd>AUDITÓRIO IPC, FORTALEZA-CE, BRASIL</dd>
-							    <dt>Instrutor(es):</dt><dd>HENRIQUE BEZERRA CARDOSO</dd>
-							</dl>
-		               	</fieldset>
-		               			
-						<div style="margin: 33px 2px">
-						    <!-- BOTÃO DE PRÉ-INSCRIÇÃO -->
-						     <a id="linkPreInscricao" href="/evento/inscricao/5581" title="Pré-Inscrição">										
-						         <span>FAÇA SUA PRÉ-INSCRIÇÃO</span>										
-						     </a>
-						</div>
+		           		<div class="right">
+			           		<fieldset class="modulos">		           			
+			           			<legend>Módulos</legend>				           	
+								
+								<h4>MÓDULO I</h4>							
+								<dl>
+								    <dt>Período:</dt><dd>22/02/2016 a 26/02/2016</dd>
+								    <dt>Carga horária:</dt><dd>20 h/a</dd>
+								    <dt>Horário 1° Turno:</dt><dd>08:00 - 12:00</dd>
+								    <dt>Frequência Mínima:</dt><dd>75%</dd>
+								   	<dt>Localização:</dt><dd>AUDITÓRIO IPC, FORTALEZA-CE, BRASIL</dd>
+								    <dt>Instrutor(es):</dt><dd>HENRIQUE BEZERRA CARDOSO</dd>
+								</dl>
+			               				           	
+								<h4>MÓDULO II</h4>							
+								<dl>
+								    <dt>Período:</dt><dd>22/02/2016 a 26/02/2016</dd>
+								    <dt>Carga horária:</dt><dd>20 h/a</dd>
+								    <dt>Horário 1° Turno:</dt><dd>08:00 - 12:00</dd>
+								    <dt>Frequência Mínima:</dt><dd>75%</dd>
+								   	<dt>Localização:</dt><dd>AUDITÓRIO IPC, FORTALEZA-CE, BRASIL</dd>
+								    <dt>Instrutor(es):</dt><dd>HENRIQUE BEZERRA CARDOSO</dd>
+								</dl>
+			               				           	
+								<h4>MÓDULO III</h4>							
+								<dl>
+								    <dt>Período:</dt><dd>22/02/2016 a 26/02/2016</dd>
+								    <dt>Carga horária:</dt><dd>20 h/a</dd>
+								    <dt>Horário 1° Turno:</dt><dd>08:00 - 12:00</dd>
+								    <dt>Frequência Mínima:</dt><dd>75%</dd>
+								   	<dt>Localização:</dt><dd>AUDITÓRIO IPC, FORTALEZA-CE, BRASIL</dd>
+								    <dt>Instrutor(es):</dt><dd>HENRIQUE BEZERRA CARDOSO</dd>
+								</dl>
+			               			           	
+								<h4>MÓDULO IV</h4>							
+								<dl>
+								    <dt>Período:</dt><dd>22/02/2016 a 26/02/2016</dd>
+								    <dt>Carga horária:</dt><dd>20 h/a</dd>
+								    <dt>Horário 1° Turno:</dt><dd>08:00 - 12:00</dd>
+								    <dt>Frequência Mínima:</dt><dd>75%</dd>
+								   	<dt>Localização:</dt><dd>AUDITÓRIO IPC, FORTALEZA-CE, BRASIL</dd>
+								    <dt>Instrutor(es):</dt><dd>HENRIQUE BEZERRA CARDOSO</dd>
+								</dl>
+			               	</fieldset>
+			               	<div class="botaoPreInscricao">
+							     <a id="linkPreInscricao" href="/evento/inscricao/5581" title="Pré-Inscrição">										
+							         <span>FAÇA SUA PRÉ-INSCRIÇÃO</span>										
+							     </a>
+							</div>
+			           	</div>	
 								               
               		</div>
               						
