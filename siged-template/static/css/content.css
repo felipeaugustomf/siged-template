@@ -27,9 +27,9 @@
     padding-left: 40px;
     border: 1px solid #CCC;
     border-left: 5px solid #275990;
-    -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2);
-    -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2);
-    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.1);
 }
 
 .title_toggle_container:before {
@@ -77,10 +77,13 @@
 
 .toggle_container {
 	overflow: hidden;
-	padding: .5em 1.2em;    
+	padding: 1.5em 1.5em;    
     border: 1px solid #ccc;
     border-top: 0px;
     font-size: .9em;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.1);
 }
 
 .toggle_container p {
@@ -88,8 +91,24 @@
 }
 
 .toggle_container fieldset {
+	margin-bottom: 1em;
 	padding: 1em 1.3em;
+	-webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.1);
 }
+
+.toggle_container legend {
+	padding: .2em 1em;
+    background-color: #F4F4F4;
+    border: 1px solid #CCC;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.1);
+}
+
+
 
 .toggle_container .objetivo-geral {
 	clear: both;
@@ -122,9 +141,10 @@
 }
 
 .toggle_container .right .botaoPreInscricao {
-	display: inline-flex;
     float: right;
-    padding-top: 2em;
+    color: #FFF;	
+    padding: .6em 1em;
+    margin-top: 1em;
 }
 
 .message {
@@ -132,7 +152,7 @@
 		no-repeat;
 	border: 1px solid #b2d1ff;
 	color: #006dba;
-	margin: 10px 0 5px 0;
+	margin-bottom: 1.5em;
 	padding: 5px 5px 5px 30px;
 	border-radius: 3px;
 }
@@ -142,7 +162,7 @@
 		no-repeat;
 	border: 1px solid #ebccd1;
 	color: #a94442;
-	margin: 10px 0 5px 0;
+	margin-bottom: 1.5em;
 	padding: 5px 5px 5px 30px;
 	border-radius: 3px;
 }
@@ -151,7 +171,7 @@
 	background: #fcf8e3 url(../images/msgwarn.png) 8px 50% no-repeat;
 	border: 1px solid #faebcc;
 	color: #8a6d3b;
-	margin: 10px 0 5px 0;
+	margin-bottom: 1.5em;
 	padding: 5px 5px 5px 30px;
 	border-radius: 3px;
 }
@@ -160,7 +180,7 @@
 	background: #dff0d8 url(../images/true.png) 8px 50% no-repeat;
 	border: 1px solid #d6e9c6;
 	color: #3c763d;
-	margin: 10px 0 5px 0;
+	margin-bottom: 1.5em;
 	padding: 5px 5px 5px 30px;
 	border-radius: 3px;
 }
