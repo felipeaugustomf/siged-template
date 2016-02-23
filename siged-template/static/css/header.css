@@ -1,42 +1,52 @@
 #header-content {
-	height: 105px;
+	height: 7em;
 	position: relative;
-	margin: 0px 12%
+	margin: 0px 12%;
+	color: #FFF;
+}
+
+#header-content #links{
+	position: absolute;
+    right: 0;    
+    background-color: #26466D;
+    border-radius: 2px;
+    color: #4B89C3;    
+}
+
+#header-content #links a{
+	color: #B9D3EE;
+    font-size: .78em;
+    padding: 0 1em;
+    
+    transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+}
+
+#header-content #links a:hover{
+	color: #F0F8FF;
 }
 
 #logo-siged-div {
 	position: absolute;
-	text-align: left;
+    top: .3em;
 }
 
 #login-ul {
 	position: absolute;
-    top: 30px;
-    right: 30px;
-    width: 100px;
-}
-
-#login-ul:after {
-	right: 0.7em;
-    width: 0;
-    height: 0;
-    content: '';
-    border-top: 5px solid #fff;
-    border-right: 5px solid transparent;
-    border-left: 5px solid transparent;
-    border-radius: 2px;
-    position: absolute;
-    top: 0.7em;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
+    top: 3.5em;
+    right: 3em;
 }
 
 #login-button {
 	display: block;
 	cursor: pointer;
+}
+
+#login-icon {
+	margin-right: .5em;
 }
 
 #login-div {
@@ -48,13 +58,9 @@
 	width: 170px;
 }
 
-#login-form {
-	/* width: 100%; */
-}
-
 #login-button {
 	color: #FFF;
-    border-radius: 6px;
+    text-shadow: 0px 0px 2px rgb(14, 77, 130);
 }
 
 #login-div .login {
@@ -75,16 +81,13 @@
 	outline: none;
 }
 
-.header-section {
-	
+.header-section {	
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0d4f8b+0,4e78a0+40,4e78a0+40,7d9ec0+100 */
 	background: rgb(13,79,139); /* Old browsers */
 	background: -moz-linear-gradient(top,  rgba(13,79,139,1) 0%, rgba(78,120,160,1) 40%, rgba(78,120,160,1) 40%, rgba(125,158,192,1) 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top,  rgba(13,79,139,1) 0%,rgba(78,120,160,1) 40%,rgba(78,120,160,1) 40%,rgba(125,158,192,1) 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom,  rgba(13,79,139,1) 0%,rgba(78,120,160,1) 40%,rgba(78,120,160,1) 40%,rgba(125,158,192,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d4f8b', endColorstr='#7d9ec0',GradientType=0 ); /* IE6-9 */
-	
-	border-top: 6px solid #0e4d82;
 }
 
 .logo-siged {
@@ -105,8 +108,8 @@
     line-height: 1.6em;
     text-align: left;
     position: absolute;
-    left: 135px;
-    top: 12px;
+    left: 8.5em;
+    top: 1.05em;
     text-shadow: 1px 1px 5px rgb(14, 77, 130);
 }
 

@@ -33,15 +33,13 @@
 }
 
 .title_toggle_container:before {
-	content: '';
-    background-image: url('../images/arrow-down.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 20px;
+	font-family: FontAwesome;
+    content: '\f078';
+    font-size: 1.3em;
+    color: rgba(18,47,94,0.85);
     position: absolute;
-    left: 10px;
-    width: 20px;
-    height: 89%;   
+    left: .42em;
+    top: 1.05em;  
 }
 
 .title_toggle_container div {
@@ -67,8 +65,8 @@
 }
 
 .title_toggle_container.active:before {
-    background-image: url('../images/arrow-up.png');
-    height: 84%;    
+    content: '\f077';
+    color: rgba(72,128,44,0.9);   
 }
 
 .title_toggle_container.active div h2{
