@@ -121,7 +121,7 @@
     border-radius: 6px;
     -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.16);
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.16);
-    padding: 10px;
+    padding: 2em 1.5em;
     width: 170px;;
 }
 
@@ -145,4 +145,8 @@
 #login-div .login-input:focus {
 	border-color: #4d90fe;
 	outline: none;
+}
+
+#login-div #j_password {
+	margin: 1em 0;
 }
