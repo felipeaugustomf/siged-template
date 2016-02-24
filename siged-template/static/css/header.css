@@ -116,13 +116,14 @@
     right: 0;
     top: 2em;
     display: none;
-    background-color: #FDFDFD;
-    border: 1px solid #CCC;
+    background-color: rgba(80, 105, 135, 0.95);
+    border: 1px solid #23507C;
     border-radius: 6px;
     -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.16);
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.16);
-    padding: 2em 1.5em;
-    width: 170px;;
+    padding: 2em 1.5em;    
+    width: 15em;
+    z-index: 1;
 }
 
 #login-button {
@@ -130,16 +131,32 @@
     text-shadow: 0px 0px 3px rgb(14, 77, 130);
 }
 
+#login-div .login-input-group{
+	display: table;
+    position: relative;
+    border-collapse: separate;
+    margin-bottom: 5px;
+    margin-bottom: 5px;
+    background: #cccccc;
+    border-radius: 4px;
+}
+
+#login-div .login-input-before{
+	color: #555555;
+    text-align: center;
+    background-color: #eeeeee;
+    border: 1px solid #cccccc;
+    border-radius: 4px 0px 0px 4px;
+    display: table-cell;
+    border-right: none;
+    padding: 0 .5em;
+    vertical-align: middle;
+}
+
 #login-div .login-input {
-	border: 1px solid rgb(185, 185, 185);
-    border-top-color: rgb(160, 160, 160);
+	border: 1px solid #cccccc;
     border-radius: 0px 3px 3px 0px;
     color: #006699;
-    width: 100%;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: .5em 1em
 }
 
 #login-div .login-input:focus {
@@ -148,5 +165,32 @@
 }
 
 #login-div #j_password {
-	margin: 1em 0;
+	
+}
+
+#login-entrar {
+	padding: .7em 2em;
+    margin: .5em 0em 1.5em 0em;
+    background-color: #58708C;
+    border: 1px solid #CCCCCC;
+}
+
+#login-entrar:hover {
+	color: #122F5E;
+    background-color: rgb(253, 253, 253);
+}
+
+#login-div > a {
+	font-size: .9em;
+	color: #B9D3EE;
+	
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+}
+
+#login-div > a:hover {
+	color: #F0F8FF;
 }

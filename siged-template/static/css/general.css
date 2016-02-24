@@ -35,9 +35,11 @@ form {
 }
 
 input, select, textarea {
+	font-family: 'Gudea', Arial, Helvetica, sans-serif;
+	line-height: 1.5em;
 	background-color: #fcfcfc;
 	border: 1px solid #ccc;
-	padding: 2px 4px;
+	padding: .5em 1em;
 }
 
 select {

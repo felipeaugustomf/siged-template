@@ -106,14 +106,21 @@
 			    			<a id="login-button"><i id="login-icon" class="fa fa-user"></i>Login</a>
 			    			<div id="login-div">
 			                    <form id="login-form" action="/j_spring_security_check" method="post">
-		                           	<input class="login-input" type='text' 
-		                        		name='j_username' id='j_username' placeholder="Usuário" />
+		                           	<div class="login-input-group">
+		                           		<span class="login-input-before"><i class="fa fa-user fa-fw"></i></span>
+			                           	<input class="login-input" type='text' 
+			                        		name='j_username' id='j_username' placeholder="Usuário" />
+		                        	</div>
+		                        	
+		                        	<div class="login-input-group">
+		                           		<span class="login-input-before"><i class="fa fa-key fa-fw"></i></span>
+			                        	<input class="login-input" type='password' 
+			                        		name='j_password' id='j_password' placeholder="Senha" />
+		                        	</div>
 		                        
-		                        	<input class="login-input" type='password' 
-		                        		name='j_password' id='j_password' placeholder="Senha" />
-		                        
-			                        <input class="submit" type='submit' value='Entrar'/>
+			                        <input id="login-entrar" class="botao" type='submit' value='Entrar'/>
 			                    </form>
+			                    <a href="*">Precisa de ajuda para entrar no SIGED?</a>
 						    </div>
 			    		</li>
 			    	</ul>
