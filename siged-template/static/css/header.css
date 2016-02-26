@@ -194,12 +194,11 @@
     right: 0;
     top: 2em;
     display: none;
-    background-color: rgba(80, 105, 135, 0.95);
-    border: 1px solid #23507C;
+    background-color: rgba(80, 105, 135, 1);
     border-radius: 6px;
-    -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.16);
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.16);
-    padding: 2em 1.5em;    
+    -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+    padding: 2em 1em;    
     width: 15em;
     z-index: 1;
 }
