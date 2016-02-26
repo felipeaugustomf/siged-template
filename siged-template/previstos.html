@@ -69,7 +69,33 @@
                 
                 
 				$("#login-button").click(function(){
+					$("#teste").toggle("slow");
+					$("#teste2").toggle("slow");
 					$("#login-div").toggle("slow");
+					$(".line1").toggle("slow");
+					$(".line2").toggle("slow");
+					
+					/* if ($("#box").css("display") === "none") {
+						$("#box").toggle(1000);
+					}
+					else {
+						$("#box").toggle(300);
+					} */
+					
+					if($("#box").css("top") === "36px") {
+						console.log("on");
+						$("#box").addClass("triangle-on");
+						$("#box").removeClass("triangle-off");
+						$("#box").css("top", "24.3px");
+					}
+					
+					else {
+						console.log("off");
+						$("#box").addClass("triangle-off");
+						$("#box").removeClass("triangle-on");
+						$("#box").css("top", "36px");
+					}
+					
 				});
             });
         </script>
@@ -104,6 +130,14 @@
 			    	<ul id="login-ul">
 			    		<li id="login-li">
 			    			<a id="login-button"><i id="login-icon" class="fa fa-user"></i>Login</a>
+
+							<!-- <div class="line1"></div>
+							<div class="line2"></div> -->
+							<div id="box" class="triangle-off" style="transition: all 0.9s; width: 0px; height: 0px; background: #506A88; transform: rotate(45deg); position: absolute; right: 42px; top: 36px; border-top: 0px solid #23507C; border-left: 0px solid #23507C; z-index: 2;"></div>
+
+			    			<!-- <div id="teste" class="upArrow"></div>
+			    			<div id="teste2" class="upArrow2"></div> -->
+			    			<div class="arrowtest-top"></div>
 			    			<div id="login-div">
 			                    <form id="login-form" action="/j_spring_security_check" method="post">
 		                           	<div class="login-input-group">
