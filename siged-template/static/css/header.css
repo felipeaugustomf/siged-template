@@ -5,6 +5,8 @@
 	background: -webkit-linear-gradient(top,  rgba(13,79,139,1) 0%,rgba(78,120,160,1) 40%,rgba(78,120,160,1) 40%,rgba(125,158,192,1) 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom,  rgba(13,79,139,1) 0%,rgba(78,120,160,1) 40%,rgba(78,120,160,1) 40%,rgba(125,158,192,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d4f8b', endColorstr='#7d9ec0',GradientType=0 ); /* IE6-9 */
+	
+    border-top: 1px solid #4B89c3;
 }
 
 .logo-siged {
@@ -61,7 +63,6 @@
     right: 0;
     background-color: #26466D;
     border-radius: 0 0 5px 5px;
-    border-top: 1px solid #4B89c3;
     color: #4B89C3;    
 }
 

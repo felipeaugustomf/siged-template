@@ -14,10 +14,12 @@ body {
 }
 
 h1, h4 {
+	display: inline-block;
+    width: 100%;
 	color: #48802c;
     font-size: 1.2em;
-    text-indent: 10px;
-    margin: .5em 0 1.5em 0;
+    text-indent: .8em;
+    margin: .5em 0;
     padding-bottom: .4em;
     border-bottom: 1px solid #CCCCCC;
     clear: both;
@@ -63,6 +65,7 @@ a:link, a:visited, a:hover {
 
 fieldset {
 	border: 1px solid #CCCCCC;
+	border-radius: 3px;
 }
 
 legend {
