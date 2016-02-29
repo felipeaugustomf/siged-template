@@ -114,19 +114,14 @@
 	margin-right: .5em;
 }
 
-#upArrow:before{
-    content: '';
-    border-left: .8em solid transparent;
-    border-right: .8em solid transparent;
-    border-bottom: .8em solid #516A88;
-    position: absolute;
-    top: 1.45em;
-    right: 3em;
-    z-index: 2;
-}
-
 #upArrow{
-	display: none;
+    display: none;
+    border-left: .7em solid transparent;
+    border-right: .7em solid transparent;
+    border-bottom: .7em solid #516A88;
+    position: absolute;
+    top: 1.55em;
+    right: 3em;
 }
 
 #login-div {
@@ -152,7 +147,6 @@
 	position: relative;
     display: inline-block;
     width: 90%;
-    border-radius: 4px;
     margin-bottom: 3.2em;
 }
 
@@ -162,6 +156,7 @@
     display: inline-block;
     box-sizing: border-box;
     width: 20%;
+    height: 3em;
     font-size: .9em;
     line-height: 1.5em;
     padding: .7em 1em;
@@ -177,9 +172,9 @@
 	right: 0;
     display: inline-block;
     box-sizing: border-box;
-    width: 80%;    
+    width: 80%;
+    height: 3em;    
     border-radius: 0px 4px 4px 0px;
-    color: #006699;
 }
 
 #login-div .login-input:focus {
