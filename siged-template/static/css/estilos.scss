@@ -1,11 +1,12 @@
-@import 'variaveis';
-@import 'mixins';
-@import 'reset';
-@import 'geral';
-@import 'header';
-@import 'menu';
-@import 'content';
-@import 'form';
-@import 'table';
-@import 'modal';
-@import 'footer';
+@import 'helpers/variaveis';
+@import 'helpers/mixins';
+
+@import 'base/reset';
+@import 'layout/geral';
+@import 'layout/header';
+@import 'layout/menu';
+@import 'layout/content';
+@import 'layout/form';
+@import 'layout/table';
+@import 'layout/footer';
+@import 'layout/modal';
